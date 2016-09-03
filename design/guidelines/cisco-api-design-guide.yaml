@@ -1,0 +1,198 @@
+id: cisco-api-design-guide
+title: API Design Guide
+type: github
+url: https://github.com/CiscoDevNet/api-design-guide
+company: Cisco
+companyLogoUrl: /media/logos/cisco.png
+companyUrl: http://developer.cisco.com/
+date: 2015-08-21
+reviewDate: 2016-08-18
+
+attachedDocuments:
+  - name: REST API Design Principles
+    description: A summary of common REST API design constraints and conventions 
+    url: https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md
+    type: github
+    referenced:
+      - name: Preface
+        url: https://github.com/CiscoDevNet/api-design-guide#1-preface
+  - name: Tracking ID flow  
+    description: A sequence diagram explaning 
+    url: https://github.com/CiscoDevNet/api-design-guide/blob/master/trackingid-flow.png
+    type: github
+    referenced:
+      - name: TrackingID Header
+        description: A sequence diagram explaning the use of the tracking ID
+        url: https://github.com/CiscoDevNet/api-design-guide#352-trackingid-header
+
+remarks:
+  - broken links due to typo error in https://github.com/CiscoDevNet/api-design-guide#36-http-verbs
+
+topics:
+  security:
+    - name: 3.1 Security
+      url: https://github.com/CiscoDevNet/api-design-guide#31-security
+    - name: 3.2 Authentication and Representation
+      quote: The REST API MUST use OAuth2 implementation for user authentication and authorization, exclusively
+      url: https://github.com/CiscoDevNet/api-design-guide#32-authentication-and-authorization
+    - name: 3.6.8 Safe and Non-Safe Methods
+      url: https://github.com/CiscoDevNet/api-design-guide#36-http-verbs
+  hypermedia:
+    - name: 3.3 Representations
+      quote: 3.3.3 A resource identifier labeled "url" MUST be present in all RESTful API resource representations
+      url: https://github.com/CiscoDevNet/api-design-guide#33-representations
+  hypermedia-read:
+    - name: 3.3 Representations
+      quote: 3.3.3 A resource identifier labeled "url" MUST be present in all RESTful API resource representations
+      url: https://github.com/CiscoDevNet/api-design-guide#33-representations
+  api-chaining:
+    - name: 3.5.2 TrackingID Header
+      url: https://github.com/CiscoDevNet/api-design-guide#352-trackingid-header
+  http-caching:
+    - name: 3.5.1 Standard Headers
+      quote: ETag, If-Match, If-None-Match
+      url: https://github.com/CiscoDevNet/api-design-guide#351-standard-headers
+  http-content-negotiation:
+    - name: 3.3 Representations
+      url: https://github.com/CiscoDevNet/api-design-guide#33-representations
+    - name: 3.5.1 Standard Headers
+      quote: Accept header, Content-Type header
+      url: https://github.com/CiscoDevNet/api-design-guide#351-standard-headers
+  http-headers:
+    - name: 3.5 HTTP Headers
+      url: https://github.com/CiscoDevNet/api-design-guide#351-standard-headers
+    - name: 3.6.1 POST
+      quote: Location header
+      url: https://github.com/CiscoDevNet/api-design-guide#361-post
+  http-methods:
+    - name: 3.6 HTTP Verbs
+      url: https://github.com/CiscoDevNet/api-design-guide#36-http-verbs
+    - name: REST Methods
+      url: https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md#rest-methods
+  http-methods-get:
+    - name: 3.6.3 GET
+      url: https://github.com/CiscoDevNet/api-design-guide#363-get
+  http-methods-post:
+    - name: 3.6.1 POST
+      url: https://github.com/CiscoDevNet/api-design-guide#361-post
+  http-methods-put:
+    - name: 3.6.2 PUT
+      url: https://github.com/CiscoDevNet/api-design-guide#362-put
+  http-methods-delete:
+    - name: 3.6.4 DELETE
+      url: https://github.com/CiscoDevNet/api-design-guide#36-http-verbs
+  http-methods-patch:
+    - name: 3.6.5 PATCH
+      url: https://github.com/CiscoDevNet/api-design-guide#36-http-verbs
+  http-methods-head:
+    - name: 3.6.6 HEAD
+      url: https://github.com/CiscoDevNet/api-design-guide#36-http-verbs
+  http-methods-options:
+    - name: 3.6.7 OPTIONS
+      url: https://github.com/CiscoDevNet/api-design-guide#36-http-verbs    
+  http-methods-alternative:
+    - name: 3.7 Alternative Forms
+      url: https://github.com/CiscoDevNet/api-design-guide#37-alternative-forms
+  http-status:
+    - name: 3.9 Status Codes
+      url: https://github.com/CiscoDevNet/api-design-guide#39-status-codes
+  http-status-standard-error:
+    - name: 3.9 Status Codes
+      url: https://github.com/CiscoDevNet/api-design-guide#39-status-codes
+  documentation:
+    - name: 3.9 Status Codes 
+      quote: 3.9.4 Documentation of response payloads MUST NOT reveal internal implementation details of the server.
+      url: https://github.com/CiscoDevNet/api-design-guide#39-status-codes
+    - name: API Documentation
+      document: 
+      url: https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md#api-documentation
+  resource:
+    - name: 3 Guidelines
+      quote: Reference Representation, Narrow Representation, Wide Representation
+      url: https://github.com/CiscoDevNet/api-design-guide#3-guidelines
+    - name: 3.3 Representations
+      url: https://github.com/CiscoDevNet/api-design-guide#33-representations
+  resource-url-format:
+    - name: 3.4 URL Format
+      url: https://github.com/CiscoDevNet/api-design-guide#34-url-format
+    - name: URL Paths
+      document: REST API Design Principles
+      url: https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md#url-paths
+  resource-id-semantic:
+    - name: 3.4.2 User Scoped Endpoints
+      url: https://github.com/CiscoDevNet/api-design-guide#342-user-scoped-endpoints
+  resource-retrieve:
+    - name: 3.6.3 GET
+      url: https://github.com/CiscoDevNet/api-design-guide#363-get
+  resource-retrieve-partial:
+    - name: 3.6.3.6 Services MAY support partial retrieval of resource state
+      quote: RFC-3986
+      url: https://github.com/CiscoDevNet/api-design-guide#363-get
+  resource-retrieve-dereference:
+    - name: 
+      quote: If a service supports the fields parameter, then a value of @reference, @narrow, or @wide SHOULD...
+      url: 
+  resource-creation:
+    - name: 3.6.1 POST
+      url: https://github.com/CiscoDevNet/api-design-guide#361-post
+  resource-creation-with-id:
+    - name: 3.6.2 PUT
+      url: https://github.com/CiscoDevNet/api-design-guide#362-put
+  resource-replacement:
+    - name: 3.6.2 PUT
+      url: https://github.com/CiscoDevNet/api-design-guide#362-put
+  resource-update:
+    - name: 3.6.2 PUT
+      url: https://github.com/CiscoDevNet/api-design-guide#362-put
+    - name: 3.6.5 PATCH
+      url: https://github.com/CiscoDevNet/api-design-guide#36-http-verbs
+  resource-update-partial:
+    - name: 3.6.5 PATCH
+      url: https://github.com/CiscoDevNet/api-design-guide#36-http-verbs
+  resource-deletion:
+    - name: 3.6.4 DELETE
+      url: https://github.com/CiscoDevNet/api-design-guide#36-http-verbs
+  resource-multiple:
+    - name: 3.11 Bulk, Batch, and Multi-Result Operations
+      url: https://github.com/CiscoDevNet/api-design-guide#311-bulk-batch-and-multi-result-operations
+  resource-action:
+    - name: 3.8 Action Resources
+      url: https://github.com/CiscoDevNet/api-design-guide#38-action-resources
+    - name: 3.6.1 POST
+      url: https://github.com/CiscoDevNet/api-design-guide#361-post
+  collection:
+    - name: 3.6.3 GET
+      url: https://github.com/CiscoDevNet/api-design-guide#363-get
+  collection-pagination:
+    - name: 3.6.3 GET
+      url: https://github.com/CiscoDevNet/api-design-guide#363-get
+  collection-filtering:
+    - name: 3.6.3 GET
+      url: https://github.com/CiscoDevNet/api-design-guide#363-get
+  naming:
+    - name: 3.3 Representations
+      quote: 3.3.11 With regard to JSON representation property names, and URL query parameters, services SHOULD...
+      url: https://github.com/CiscoDevNet/api-design-guide#33-representations
+  naming-case:
+    - name: 3.3 Representations
+      url: https://github.com/CiscoDevNet/api-design-guide#33-representations
+    - name: URL Paths
+      document: REST API Design Principles
+      url: https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md#url-paths
+  data-format:
+    - name: 3.3 Representations
+      quote: ... prefer the native JSON boolean type ...
+      url: https://github.com/CiscoDevNet/api-design-guide#33-representations
+  data-format-date-time:
+    - name: 3.3 Representations
+      quote: RFC-3339
+      url: https://github.com/CiscoDevNet/api-design-guide#33-representations
+  data-format-null:
+    - name: JSON Attributes
+      url: https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md#json-attributes
+  undo:
+    - name: "*3.6.4.3 *The POST verb MAY be used to reverse the soft-delete of a resource, using an undelete parameter"
+      url: https://github.com/CiscoDevNet/api-design-guide#36-http-verbs
+  versioning:
+    - name: 3.13 Versioning
+      url: https://github.com/CiscoDevNet/api-design-guide#313-versioning

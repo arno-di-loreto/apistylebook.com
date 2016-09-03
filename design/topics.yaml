@@ -1,0 +1,376 @@
+api-chaining:
+  category: Miscellaneous
+  name: API chaining
+  description: How to chain API call in internal systems
+api-counts:
+  category: API Design
+  name: API counts
+  description: How many endpoints/resources in an API?
+asynchronicity:
+  category: Asynchronicity
+  name: Asynchronicity
+  description: How to handle long operations  
+collection-filtering:
+  category: Collection Resources
+  name: Filtering
+  description: How to select some resources in a collection
+collection-pagination:
+  category: Collection Resources
+  name: Pagination
+  description: How to retrieve a range of resources in a collection 
+collection-retrieve:
+  category: Collection Resources
+  name: Retrieve a collection
+  description: How to get a collection or resources
+collection-sorting:
+  category: Collection Resources
+  name: Sorting a collection
+  description: How to sort a collection of resources
+collection:
+  category: Collection Resources
+  name: Collection
+  description: What is a collection (set) of resources
+cors:
+  category: Miscellaneous
+  name: CORS
+  description: How to deal with CORS
+data-standards:
+  category: Data
+  name: Standards data
+  description: Which standard use for values like languages, countries, currencies, ...
+data-format-date-time:
+  category: Data
+  name: Date and Time
+  description: How to deal with date and time data
+data-format-null:
+  category: Data
+  name: Null data
+  description: How to deal with null data
+data-format:
+  category: Data
+  name: Data format
+  description: which data format use
+debug-diagnose:
+  category: Miscellaneous
+  name: Debug and diagnose
+  description: How to provide informations to debug and diagnose 
+developer-experience:
+  category: Miscellaneous
+  name: Developer experience
+  description: How to take care of developer experience (DX)
+documentation:
+  category: Miscellaneous
+  name: Documentation
+  description: How to produce and/or propose API documentation
+errors:
+  category: Error handling
+  name: Errors
+  description: How to handle errors
+global-design:
+  category: API Design
+  name: Global design
+  description: General considerations on API design
+guiding-input:
+  category: Miscellaneous
+  name: Guiding inputs
+  description: How to help consumers or end user to input relevant data
+governance:
+  category: API Lifecycle
+  name: Governance
+  description: How to ensure API governance (advertise, consistency, ...)
+http-caching:
+  category: HTTP Protocol
+  name: Caching
+  description: How to use and provide relevant caching informations
+http-content-negotiation:
+  category: HTTP Protocol
+  name: Content negociation and media types
+  description: How to describe your API data format and/or propose different formats (like json, yaml, xml atom, ...)
+http-headers:
+  category: HTTP Protocol
+  name: HTTP Headers
+  description: How to use standard or custom HTTP headers
+http-status-200:
+  category: HTTP Status
+  name: HTTP Status 200
+  description: When to use HTTP status 200
+http-status-201:
+  category: HTTP Status
+  name: HTTP Status 201
+  description: When to use HTTP status 201
+http-status-202:
+  category: HTTP Status
+  name: HTTP Status 202
+  description: When to use HTTP status 202
+http-status-204:
+  category: HTTP Status
+  name: HTTP Status 204
+  description: When to use HTTP status 204
+http-status-206:
+  category: HTTP Status
+  name: HTTP Status 206
+  description: When to use HTTP status 206
+http-status-301:
+  category: HTTP Status
+  name: HTTP Status 301
+  description: When to use HTTP status 301
+http-status-302:
+  category: HTTP Status
+  name: HTTP Status 302
+  description: When to use HTTP status 302
+http-status-303:
+  category: HTTP Status
+  name: HTTP Status 303
+  description: When to use HTTP status 303
+http-status-304:
+  category: HTTP Status
+  name: HTTP Status 304
+  description: When to use HTTP status 304
+http-status-400:
+  category: HTTP Status
+  name: HTTP Status 400
+  description: When to use HTTP status 400
+http-status-401:
+  category: HTTP Status
+  name: HTTP Status 401
+  description: When to use HTTP status 401
+http-status-403:
+  category: HTTP Status
+  name: HTTP Status 403
+  description: When to use HTTP status 403
+http-status-404:
+  category: HTTP Status
+  name: HTTP Status 404
+  description: When to use HTTP status 404
+http-status-405:
+  category: HTTP Status
+  name: HTTP Status 405
+  description: When to use HTTP status 405
+http-status-406:
+  category: HTTP Status
+  name: HTTP Status 406
+  description: When to use HTTP status 406
+http-status-408:
+  category: HTTP Status
+  name: HTTP Status 408
+  description: When to use HTTP status 408
+http-status-409:
+  category: HTTP Status
+  name: HTTP Status 409
+  description: When to use HTTP status 409
+http-status-411:
+  category: HTTP Status
+  name: HTTP Status 411
+  description: When to use HTTP status 411
+http-status-412:
+  category: HTTP Status
+  name: HTTP Status 412
+  description: When to use HTTP status 412
+http-status-415:
+  category: HTTP Status
+  name: HTTP Status 415
+  description: When to use HTTP status 415
+http-status-422:
+  category: HTTP Status
+  name: HTTP Status 422
+  description: When to use HTTP status 422
+http-status-423:
+  category: HTTP Status
+  name: HTTP Status 423
+  description: When to use HTTP status 423
+http-status-428:
+  category: HTTP Status
+  name: HTTP Status 428
+  description: When to use HTTP status 428
+http-status-429:
+  category: HTTP Status
+  name: HTTP Status 429
+  description: When to use HTTP status 429
+http-status-500:
+  category: HTTP Status
+  name: HTTP Status 500
+  description: When to use HTTP status 500
+http-status-501:
+  category: HTTP Status
+  name: HTTP Status 501
+  description: When to use HTTP status 501
+http-status-503:
+  category: HTTP Status
+  name: HTTP Status 503
+  description: When to use HTTP status 503
+http-status-standard-error:
+  category: Error handling
+  name: Error format
+  description: How to provide information about errors
+http-status:
+  category: HTTP Status
+  name: HTTP Statuses
+  description: General information about HTTP statuses usage
+http-methods-alternative:
+  category: HTTP Methods
+  name: Forbidden methods alternatives
+  description: What to do when only possible HTTP methods are POST and GET
+http-methods-delete:
+  category: HTTP Methods
+  name: DELETE
+  description: When to use HTTP method DELETE
+http-methods-get:
+  category: HTTP Methods
+  name: GET
+  description: When to use HTTP method GET
+http-methods-head:
+  category: HTTP Methods
+  name: HEAD
+  description: When to use HTTP method HEAD
+http-methods-options:
+  category: HTTP Methods
+  name: OPTIONS
+  description: When to use HTTP method OPTION
+http-methods-patch:
+  category: HTTP Methods
+  name: PATCH
+  description: When to use HTTP method PATCH
+http-methods-post:
+  category: HTTP Methods
+  name: POST
+  description: When to use HTTP method POST
+http-methods-put:
+  category: HTTP Methods
+  name: PUT
+  description: When to use HTTP method PUT
+http-methods:
+  category: HTTP Methods
+  name: HTTP methods
+  description: General information about HTTP methods usage
+http:
+  category: HTTP Protocol
+  name: HTTP protocol
+  description: General informations about HTTP protocol
+hypermedia-read:
+  category: Hypermedia
+  name: Hypermedia (read)
+  description: How to use hypermedia to read data
+hypermedia-write:
+  category: Hypermedia
+  name: Hypermedia (write)
+  description: How to use hypermedia to write data
+hypermedia:
+  category: Hypermedia
+  name: Hypermedia
+  description: How to use hypermedia
+naming-language:
+  category: Naming
+  name: Language
+  description: Which language(s) use when designing an API
+naming-case:
+  category: Naming
+  name: Case
+  description: Which case (lowercase, camelCase, ...) to use and when
+naming:
+  category: Naming
+  name: Naming
+  description: How to name things
+notifications-server-events:
+  category: Asynchronicity
+  name: Notifying API consumers
+  description: How to send events or notifications to API consumers
+query-parameter:
+  category: Miscellaneous
+  name: Query parameters
+  description: How to use query parameters
+performance:
+  category: Miscellaneous
+  name: Performance and bandwidth
+  description: How to deal with high traffic or consumers with low bandwith
+rate-limiting:
+  category: Miscellaneous
+  name: Rate limiting
+  description: How to provide information about how many calls a consumer can do
+resource-action:
+  category: Resources
+  name: Action resource
+  description: How to use action resource (e.g. resources like /cancel or /approve)
+resource-change-tracking:
+  category: Resources
+  name: Track change
+  description: How to track change on resources
+resource-creation-with-id:
+  category: Resources
+  name: Create resource with a specific ID
+  description: How to create resource with a provided id
+resource-creation:
+  category: Resources
+  name: Create resource
+  description: How to create resources
+resource-deletion:
+  category: Resources
+  name: Delete resource
+  description: How to delete resources
+resource-id-semantic:
+  category: Resources
+  name: ID with semantic
+  description: Using meaningful ids (like `me`)
+resource-id:
+  category: Resources
+  name: Resource ID
+  description: What is a resource ID and/or how it's built
+resource-multiple:
+  category: Resources
+  name: Batch Bulk
+  description: How to handle batch/bulk processing/creation/update/... (e.g. handle multiple resources at conce)
+resource-relationships:
+  category: Resources
+  name: Relationships
+  description: How to define and use relations between resources
+resource-replacement:
+  category: Resources
+  name: Replace resource
+  description: How to replace (or update fully) a resource
+resource-retrieve-dereference:
+  category: Resources
+  name: Dereference Relationships
+  description: How to load a resource and its linked resources in one call
+resource-retrieve-partial:
+  category: Resources
+  name: Retrieve resource partially
+  description: How to retrieve partially a resource
+resource-retrieve:
+  category: Resources
+  name: Retrieve resource
+  description: How to retrieve a resource
+resource-state:
+  category: Resources
+  name: Resource's state
+  description: How to change a resource's state/status (like processed/sent/paid/...)
+resource-update-partial:
+  category: Resources
+  name: Update resource partially
+  description: How to udate partially a resource
+resource-update:
+  category: Resources
+  name: Update resource
+  description: How to update a resource
+resource-url-format:
+  category: Resources
+  name: URL format
+  description: How to design URLs
+resource:
+  category: Resources
+  name: Resource
+  description: General informations about resources
+security:
+  category: Security
+  name: Security
+  description: Security concerns
+security-data:
+  category: Security
+  name: Data privacy
+  description: Data privacy concerns
+undo:
+  category: Miscellaneous 
+  name: Undo
+  description: How to undo things
+versioning:
+  category: API Lifecycle
+  name: Versionning
+  description: How to handle API versionning

@@ -1,0 +1,160 @@
+id: paypal-api-style-guide
+title: API Style Guide
+type: github
+url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md
+company: PayPal
+companyLogoUrl: /media/logos/paypal.png
+companyUrl: https://developer.paypal.com/
+date: 2016-08-11
+reviewDate: 2016-08-31
+
+topics:
+  collection-filtering:
+    - name: Time Selection
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#time-selection
+    - name: Complex Operation - Search
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#complex-operation---search
+  collection-pagination:
+    - name: Paging
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#paging 
+    - name: Paging (Complex Operation - Search)
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#paging-1
+  collection-retrieve:
+    - name: Collection Resources
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources
+  collection-sorting:
+    - name: Sorting
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#sorting
+  collection:
+    - name: Collection Resources
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources
+    - name: Sub-Resource Collection
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#sub-resource-collection
+  http-caching:
+    - name: Read-only resources
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#read-only-resources
+  http-status-200:
+    - name: HTTP Status (Collections)
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status
+    - name: HTTP Status (Read Single Resource)
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status-1
+  http-status-204:
+    - name: Update Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-single-resource
+    - name: Update Partial Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-partial-single-resource
+    - name: Delete Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#delete-single-resource
+  http-status-400:
+    - name: HTTP Status (Collections)
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status
+  http-status-404:
+    - name: HTTP Status (Collections)
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status 
+    - name: HTTP Status (Read Single Resource)
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status-1
+    - name: Update Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-single-resource
+    - name: Delete Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#delete-single-resource
+  http-status-422:
+    - name: Update Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-single-resource
+  http-status:
+    - name: HTTP Status (Collections)
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status
+    - name: HTTP Status (Read Single Resource)
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status-1
+  http-methods-delete:
+    - name: Collection Resources
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources
+    - name: Delete Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#delete-single-resource
+  http-methods-get:
+    - name: Collection Resources
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources
+    - name: HTTP Status (Read Single Resource)
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-status-1
+  http-methods-patch:
+    - name: Collection Resources
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources
+    - name: Update Partial Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-partial-single-resource
+  http-methods-post:
+    - name: Collection Resources
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources
+    - name: Create New Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#create-new-resource
+  http-methods-put:
+    - name: Collection Resources
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources
+    - name: Update Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-single-resource
+  http-methods:
+    - name: Collection Resources
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources
+  hypermedia-read:
+    - name: Paging Hypermedia Links
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#hypermedia-links
+    - name: Create New Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#create-new-resource
+      quote: Hypermedia links provide an easy way to get the URL of the newly created resource
+  hypermedia:
+    - name: Paging Hypermedia Links
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#hypermedia-links
+    - name: Create New Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#create-new-resource
+      quote: Hypermedia links provide an easy way to get the URL of the newly created resource
+  naming:
+    - name: Collection Resources
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#collection-resources
+      quote: Collection resource names should be plural nouns
+  query-parameter:
+    - name: Filtering
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#filtering 
+  performance:
+    name: Performance and bandwidth
+    description: How to deal with high traffic or consumers with low bandwith
+  resource-action:
+    - name: Complex Operation
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#complex-operation
+  resource-creation-with-id:
+    - name: Create New Resource - Consumer Supplied Identifier
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#create-new-resource---consumer-supplied-identifier
+  resource-creation:
+    - name: Create New Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#create-new-resource
+  resource-deletion:
+    - name: Delete Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#delete-single-resource
+  resource-multiple:
+    - name: Complex Operation - Composite
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#complex-operation---composite
+  resource-replacement:
+    - name: Update Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-single-resource
+  resource-retrieve:
+    - name: Read Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#read-single-resource
+  resource-state:
+    - name: Complex Operation - Transient
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#complex-operation---transient
+  resource-update-partial:
+    - name: Update Partial Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-partial-single-resource
+  resource-update:
+    - name: Update Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-single-resource
+  resource-url-format:
+    - name: URL Components
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#uri-components
+    - name: Update Partial Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#update-partial-single-resource
+  resource:
+    - name: Read Single Resource
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#read-single-resource
+    - name: Sub-Resource Singleton
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#sub-resource-singleton
+  versioning:
+    - name: Version
+      url: https://github.com/paypal/api-standards/blob/master/api-style-guide.md#version

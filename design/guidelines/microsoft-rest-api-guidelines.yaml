@@ -1,0 +1,259 @@
+id: microsoft-rest-api-guidelines
+title: Microsoft REST API Guidelines
+type: github
+url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md
+company: Microsoft
+companyLogoUrl: /media/logos/microsoft.png
+companyUrl: https://opensource.microsoft.com/
+date: 2016-07-19
+reviewDate: 2016-08-31
+
+topics:
+  asynchronicity:
+    - name: Long running API faults
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#55-long-running-api-faults
+    - name: Long running operations
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#13-long-running-operations
+    - name: Operations resource
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1324-operations-resource
+    - name: Operation resource
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1325----operation-resource
+    - name: Operation tombstones
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1326-operation-tombstones
+    - name: The typical flow, polling
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1327-the-typical-flow-polling
+    - name: The typical flow, push notifications
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1328-the-typical-flow-push-notifications
+    - name: Retry-After
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1329-retry-after  
+  collection-filtering:
+    - name: Filtering
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#97-filtering
+  collection-pagination:
+    - name: Big collections
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#94-big-collections
+    - name: Pagination
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#98-pagination
+  collection-sorting:
+    - name: Variable order rule
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#62-variable-order-rule
+    - name: Sorting collections
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#96-sorting-collections
+  collection:
+    - name: Collections
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#9-collections
+  cors:
+    - name: CORS
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#8-cors
+  data-format-date-time:
+    - name: Guidelines for dates and times
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#112-guidelines-for-dates-and-times
+    - name: JSON serialization of dates and times
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#113-json-serialization-of-dates-and-times
+    - name: Durations
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#114-durations
+    - name: Intervals
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#115-intervals
+    - name: Repeating intervals
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#116-repeating-intervals
+  data-format:
+    - name: Response Formats
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#710-response-formats
+    - name: JSON standardizations
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#11-json-standardizations
+  developer-experience:
+    - name: Client Guidance
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#6-client-guidance
+    - name: Client library optional
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#712-client-library-optional
+  documentation:
+    - name: Options and link headers
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#744-options-and-link-headers
+      quote: In addition, services SHOULD include a Link header (see RFC 5988) to point to documentation for the resource
+  errors:
+    - name: Errors
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#51-errors
+    - name: Faults
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#52-faults
+    - name: Long running API faults
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#55-long-running-api-faults
+    - name: Silent Fail Rule
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#63-silent-fail-rule
+    - name: Unsupported requests
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#15-unsupported-requests
+  global-design:
+    - name: Introduction
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#3-introduction
+  governance:
+    - name: Interpreting The Guidelines
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#4-interpreting-the-guidelines
+    - name: When to version
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#122-when-to-version
+    - name: Definition of a breaking change
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#123-definition-of-a-breaking-change
+  http-caching:
+    - name: Standard request headers
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#75-standard-request-headers
+      quote: If-Match, If-None-Match, If-Range
+    - name: Standard response headers
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#76-standard-response-headers
+      quote: ETag
+    - name: Retention policy for operation results
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#133-retention-policy-for-operation-results
+  http-content-negotiation:
+    - name: Standard request headers
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#75-standard-request-headers
+      quote: Accept Content Type
+    - name: Standard response headers
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#76-standard-response-headers
+      quote: Content Type
+    - name: Clients-specified response format
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#7101-clients-specified-response-format
+  http-headers:
+    - name: POST
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#741-post
+      quote: POST operations SHOULD support the Location response header
+    - name: Options and link headers
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#744-options-and-link-headers
+    - name: Standard request headers
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#75-standard-request-headers
+    - name: Standard response headers
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#76-standard-response-headers
+    - name: Custom Headers
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#77-custom-headers
+    - name: Specifying headers as query parameters
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#78-specifying-headers-as-query-parameters
+  http-status-standard-error:
+    - name: Error condition responses
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#7102-error-condition-responses
+  http-status:
+    - name: Errors
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#51-errors
+    - name: Faults
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#52-faults
+    - name: HTTP Status Codes
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#711-http-status-codes
+  http-methods-delete:
+    - name: Supported Methods
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods
+  http-methods-get:
+    - name: Supported Methods
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods
+  http-methods-head:
+    - name: Supported Methods
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods
+  http-methods-options:
+    - name: Supported Methods
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods
+    - name: Options and link headers
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#744-options-and-link-headers
+  http-methods-patch:
+    - name: Supported Methods
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods
+    - name: PATCH
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#742-patch
+    - name: Creating resources via PATCH (UPSERT semantics)
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#743-creating-resources-via-patch-upsert-semantics
+  http-methods-post:
+    - name: Supported Methods
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods
+    - name: POST
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#741-post
+    - name: Changing collections
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#95-changing-collections
+    - name: POST (Long running operations)
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1322-post
+    - name: POST, hybrid model (Long running operations)
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1323-post-hybrid-model
+  http-methods-put:
+    - name: Supported Methods
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods
+    - name: Changing collections
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#95-changing-collections
+    - name: PUT (Long running operations)
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1321-put
+  http-methods:
+    - name: Supported Methods
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#74-supported-methods
+  http:
+    name: HTTP protocol
+    description: General informations about HTTP protocol
+  hypermedia-read:
+    - name: Options and link headers
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#744-options-and-link-headers
+    - name: Big collections
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#94-big-collections
+      quote: the serialization payload MUST contain the opaque URL for the next page 
+  notifications-server-events:
+    - name: The typical flow, push notifications
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1328-the-typical-flow-push-notifications
+    - name: Push notifications via webhooks
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#14-push-notifications-via-webhooks
+  resource-action:
+    - name: Operations resource
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1324-operations-resource
+    - name: Operation resource
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1325----operation-resource
+    - name: Operation tombstones
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1326-operation-tombstones
+    - name: The typical flow, polling
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1327-the-typical-flow-polling
+    - name: The typical flow, push notifications
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1328-the-typical-flow-push-notifications
+    - name: Retry-After
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#1329-retry-after
+  resource-change-tracking:
+    - name: Delta queries
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#10-delta-queries
+  resource-creation-with-id:
+    - name: Creating resources via PATCH (UPSERT semantics)
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#743-creating-resources-via-patch-upsert-semantics
+  resource-creation:
+    - name: POST
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#741-post
+    - name: Changing collections
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#95-changing-collections
+  resource-id-semantic:
+    - name: Canonical identifier
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#73-canonical-identifier
+  resource-id:
+    - name: Canonical identifier
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#73-canonical-identifier
+  resource-multiple:
+    name: Batch Bulk
+    description: How to handle batch/bulk processing/creation/update/... (e.g. handle multiple resources at conce)
+  resource-retrieve-partial:
+    - name: Standard request headers
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#75-standard-request-headers
+      quote: Prefer return=minimal, return=representation
+    - name: Standard response headers
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#76-standard-response-headers
+      quote: Preference-Applied
+  resource-update-partial:
+    - name: PATCH
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#742-patch
+    - name: Creating resources via PATCH (UPSERT semantics)
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#743-creating-resources-via-patch-upsert-semantics
+  resource-update:
+    - name: PATCH
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#742-patch
+    - name: Creating resources via PATCH (UPSERT semantics)
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#743-creating-resources-via-patch-upsert-semantics
+  resource-url-format:
+    - name: URL Structure
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#71-url-structure
+    - name: URL Length
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#72-url-length
+    - name: Collection URL patterns
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#93-collection-url-patterns
+  security:
+    - name: Security
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#148-security
+  security-data:
+    - name: PII parameters
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#79-pii-parameters
+  versioning:
+    - name: Guidelines for existing services and versioning of services
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#42-guidelines-for-existing-services-and-versioning-of-services
+    - name: Versioning
+      url: https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning

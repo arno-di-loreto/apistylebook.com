@@ -1,0 +1,84 @@
+id: white-house-web-api-standards
+title: White House Web API Standards
+type: github
+url: https://github.com/WhiteHouse/api-standards
+company: White House
+companyLogoUrl: /media/logos/whitehouse.png
+companyUrl: https://www.whitehouse.gov/developers
+date: 2015-02-24
+reviewDate: 2016-08-18
+
+topics:
+  collection-filtering:
+    - name: Record Limits
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#record-limits
+  cors:
+    - name: JSONP
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#jsonp
+  http-content-negotiation:
+    - name: General guidelines for RESTful URLs
+      quote: Formats should be in the form of api/v2/resource/{id}.json
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls
+  http-headers:
+    - name: General guidelines for RESTful URLs
+      quote: URL v. header
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls
+  http-status-200:
+    - name: Error handling
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#error-handling
+  http-status-400:
+    - name: Error handling
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#error-handling
+  http-status-500:
+    - name: Error handling
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#error-handling
+  http-status-standard-error:
+    - name: Error handling
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#error-handling
+  http-status:
+    - name: Error handling
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#error-handling
+  http-methods-delete:
+    - name: General guidelines for RESTful URLs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls
+  http-methods-get:
+    - name: General guidelines for RESTful URLs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls
+  http-methods-post:
+    - name: General guidelines for RESTful URLs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls
+  http-methods-put:
+    - name: General guidelines for RESTful URLs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls
+  http-methods:
+    - name: HTTP verbs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#http-verbs
+    - name: General guidelines for RESTful URLs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls
+  naming:
+    - name: General guidelines for RESTful URLs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls
+  resource-creation:
+    - name: HTTP verbs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#http-verbs
+  resource-deletion:
+    - name: HTTP verbs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#http-verbs
+  resource-multiple:
+    - name: HTTP verbs
+      quote: Bulk update, Delete all dogs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#http-verbs
+  resource-retrieve:
+    - name: HTTP verbs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#http-verbs
+  resource-update:
+    - name: HTTP verbs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#http-verbs
+  resource-url-format:
+    - name: RESTful URLs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#restful-urls
+  versioning:
+    - name: General guidelines for RESTful URLs
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#general-guidelines-for-restful-urls
+    - name: Versions
+      url: https://github.com/WhiteHouse/api-standards/blob/master/README.md#versions

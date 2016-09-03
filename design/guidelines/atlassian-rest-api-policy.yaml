@@ -1,0 +1,48 @@
+id: atlassian-rest-api-policy
+title: Atlassian REST API Policy
+type: website
+url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy
+company: Atlassian
+companyLogoUrl: /media/logos/atlassian.png
+companyUrl: https://developer.atlassian.com/
+date: 2015-01-15
+reviewDate: 2016-09-01
+
+topics:
+  collection-pagination:
+    - name: Resource/rate limits and paging
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Resource/ratelimitsandpaging 
+  data-format:
+    - name: Compatibility policy
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Compatibilitypolicy
+    - name: Structured representations (application/json)
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Structuredrepresentations(application/json)
+    - name: Forward compatibility
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Forwardcompatibility
+  developer-experience:
+    - name: Deprecation policy
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Deprecationpolicy
+  governance:
+    - name: Compatibility policy
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Compatibilitypolicy
+    - name: Deprecation policy
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Deprecationpolicy 
+  http-headers:
+    - name: Detectability (Deprecation Policy)
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Detectability
+  rate-limiting:
+    - name: Resource/rate limits and paging
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Resource/ratelimitsandpaging
+  resource-url-format:
+    - name: Stable URIs
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-StableURIs
+  versioning:
+    - name: Compatibility policy
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Compatibilitypolicy
+    - name: Backwards compatibility
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Backwardscompatibility
+    - name: Structured representations (application/json)
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-Structuredrepresentations(application/json)
+    - name: API versioning
+      url: https://developer.atlassian.com/display/HOME/Atlassian+REST+API+policy#AtlassianRESTAPIpolicy-APIversioning
+

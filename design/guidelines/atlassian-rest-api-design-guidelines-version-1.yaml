@@ -1,0 +1,124 @@
+id: atlassian-rest-api-design-guidelines-version-1
+title: Atlassian REST API Design Guidelines version 1
+type: website
+url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1
+company: Atlassian
+companyLogoUrl: /media/logos/atlassian.png
+companyUrl: https://developer.atlassian.com/
+date: 2016-01-22
+reviewDate: 2016-09-01
+
+topics:
+  collection-pagination:
+    - name: REST Resources
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources
+      quote: Standard Query Parameters in URIs (start-index, max-results) 
+  collection:
+    - name: REST Resources
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources
+      quote: URI Structure
+    - name: REST Resources
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources
+      quote: Collections of Entities
+  data-format:
+    - name: REST Resources
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources
+      quote: Representations (Content Types) of Entities
+    - name: 'Appendix B: Basic Data Types'
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixB:BasicDataTypes
+  governance:
+    - name: Using these Guidelines
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-UsingtheseGuidelines
+      quote: We strongly recommend that someone who is familiar with these guidelines should review your REST API code
+    - name: Version Control for APIs
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-VersionControlforAPIs
+      quote: When to Change the Version
+  http-caching:
+    - name: REST Resources
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources
+      quote: Version Control for Entities
+    - name: Caching
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Caching
+  http-headers:
+    - name: REST Resources
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources
+      quote: Entities SHOULD be served with an ETag header.
+    - name: Caching
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Caching
+      quote: ETag, If-None-Match
+  http-status-200:
+    - name: 'Appendix A: Response Codes'
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes
+  http-status-201:
+    - name: 'Appendix A: Response Codes'
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes
+  http-status-202:
+    - name: 'Appendix A: Response Codes'
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes
+  http-status-204:
+    - name: 'Appendix A: Response Codes'
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes
+  http-status-301:
+    - name: 'Appendix A: Response Codes'
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes
+  http-status-304:
+    - name: 'Appendix A: Response Codes'
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes
+  http-status-401:
+    - name: 'Appendix A: Response Codes'
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes
+  http-status-404:
+    - name: 'Appendix A: Response Codes'
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes
+  http-status-412:
+    - name: Concurrency
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Concurrency
+    - name: 'Appendix A: Response Codes'
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes
+  http-status:
+    - name: 'Appendix A: Response Codes'
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-AppendixA:ResponseCodes
+  http-methods-delete:
+    - name: Concurrency
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Concurrency
+  http-methods-put:
+    - name: Concurrency
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Concurrency
+  hypermedia-read:
+    - name: REST Resources
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources
+      quote: Hypertext Linking within an Entity
+  hypermedia-write:
+    - name: REST Resources
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources
+      quote: Hypertext Linking within an Entity
+  hypermedia:
+    - name: REST Resources
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources
+      quote: Hypertext Linking within an Entity
+  resource-deletion:
+    - name: Concurrency
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Concurrency
+  resource-retrieve-dereference:
+    - name: REST Resources
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources
+      quote: Standard Query Parameters in URIs (expand)
+    - name: REST Resources
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources
+      quote: Title Expansion for Entities
+  resource-update:
+    - name: Concurrency
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Concurrency
+  resource-url-format:
+    - name: REST Resources
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources
+      quote: URI Structure
+  resource:
+    - name: REST Resources
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-RESTResources
+  security:
+    - name: Security
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-Security
+  versioning:
+    - name: Version Control for APIs
+      url: https://developer.atlassian.com/docs/atlassian-platform-common-components/rest-api-development/atlassian-rest-api-design-guidelines-version-1#AtlassianRESTAPIDesignGuidelinesversion1-VersionControlforAPIs

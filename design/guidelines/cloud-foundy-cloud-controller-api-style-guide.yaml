@@ -1,0 +1,176 @@
+id: cloud-foundy-cloud-controller-api-style-guide
+title: Cloud Controller API v3 Style Guide (Proposal)
+type: github
+url: https://github.com/cloudfoundry/cc-api-v3-style-guide
+company: Cloud Foundry
+companyLogoUrl: /media/logos/cloudfoundry.png
+companyUrl: https://www.cloudfoundry.org/
+date: 2016-05-11
+reviewDate: 2016-08-18
+
+topics:
+  hypermedia:
+    - name: Resources
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#resources
+    - name: Links
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#links
+    - name: Includind Related Resources
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#including-related-resources
+  hypermedia-read:
+    - name: Resources
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#resources
+    - name: Links
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#links
+  hypermedia-write:
+    - name: Links
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#links
+  http-methods:
+    - name: Requests
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#requests
+  http-methods-get:
+    - name: GET
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#get
+  http-methods-post:
+    - name: POST
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#post
+  http-methods-put:
+    - name: PUT
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#put
+  http-methods-delete:
+    - name: DELETE
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#delete
+  http-methods-patch:
+    - name: PATCH
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#patch
+  http-status:
+    - name: Responses Codes
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#response-codes
+    - name: GET responses (Resource)
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#responses-resource
+    - name: GET responses (Collection)
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#responses-collection
+    - name: POST responses
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#responses
+    - name: PUT responses
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#responses-1
+    - name: PATCH responses
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#responses-2
+    - name: DELETE responses
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#responses-3
+  http-status-200:
+    - name: Successful Requests
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#successful-requests
+  http-status-201:
+    - name: Successful Requests
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#successful-requests
+  http-status-202:
+    - name: Successful Requests
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#successful-requests
+  http-status-204:
+    - name: Successful Requests
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#successful-requests
+  http-status-302:
+    - name: Redirections
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#redirection
+  http-status-303:
+    - name: Redirections
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#redirection
+  http-status-400:
+    - name: Client Errors
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#client-errors
+  http-status-401:
+    - name: Client Errors
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#client-errors
+  http-status-403:
+    - name: Client Errors
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#client-errors
+  http-status-404:
+    - name: Client Errors
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#client-errors
+  http-status-422:
+    - name: Client Errors
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#client-errors
+  http-status-500:
+    - name: Server Errors
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#server-errors
+  http-status-503:
+    - name: Server Errors
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#server-errors
+  http-status-standard-error:
+    - name: Errors
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#errors
+  resource:
+    - name: Resources
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#resources
+  resource-id:
+    - name: Resources
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#resources
+  resource-url-format:
+    - name: URL Structure
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#url-structure
+  resource-retrieve:
+    - name: GET
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#get
+  resource-retrieve-partial:
+    - name: Requesting Partiel Resources
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#requesting-partial-resources
+    - name: Nested Resources
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#nested-resources
+  resource-retrieve-dereference:
+    - name: Includind Related Resources
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#including-related-resources
+  resource-creation:
+    - name: POST
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#post
+  resource-update:
+    - name: PATCH
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#patch
+  resource-update-partial:
+    - name: PATCH
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#patch
+  resource-deletion:
+    - name: DELETE
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#delete
+  resource-action:
+    - name: PUT
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#put
+    - name: Actions
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#actions
+  resource-relationships:
+    - name: Relationships
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#relationships
+    - name: Links
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#links
+  collection:
+    - name: Collections
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#collections
+  collection-retrieve:
+    - name: GET
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#get
+  collection-pagination:
+    - name: Pagination
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#pagination
+    - name: Pagination of Related Resources
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#pagination-of-related-resources
+  collection-filtering:
+    - name: Filtering
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#filtering
+  naming:
+    - name: Query Parameters
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#query-parameters
+    - name: Field Names
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#field-names
+    - name: URL Structure
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#url-structure
+  naming-case:
+    - name: Query Parameters
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#query-parameters
+    - name: Field Names
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#field-names
+  query-parameter:
+    - name: Query Parameters
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#query-parameters
+  asynchronicity:
+    - name: Asynchronicity
+      url: https://github.com/cloudfoundry/cc-api-v3-style-guide#asynchronicity
+ 

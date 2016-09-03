@@ -1,0 +1,289 @@
+id: haufe-api-styleguide
+title: Haufe API style guide
+type: github
+url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/readme.md
+company: Haufe
+companyLogoUrl: /media/logos/haufe.png
+companyUrl: http://dev.haufe.com/
+date: 2015-01-15
+reviewDate: 2016-08-31
+
+topics:
+  collection-filtering:
+    - name: Filtering
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/filtering-sorting-field-selection-and-paging/filtering-sorting-field-selection-and-paging.md#filtering
+    - name: Time selection
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/filtering-sorting-field-selection-and-paging/filtering-sorting-field-selection-and-paging.md#time-selection
+    - name: Search
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/search/search.md
+  collection-pagination:
+    - name: Paging
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/filtering-sorting-field-selection-and-paging/filtering-sorting-field-selection-and-paging.md#paging 
+  collection-retrieve:
+    - name: Get List of resources
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#get-list-of-resources
+  collection-sorting:
+    - name: Sorting
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/filtering-sorting-field-selection-and-paging/filtering-sorting-field-selection-and-paging.md#sorting
+  collection:
+    - name: Collection Resources
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md
+  data-standards:
+    - name: Currency
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/type-formatting/type-formatting.md#currency
+      quote: 3-character ISO-4217
+    - name: Country
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/type-formatting/type-formatting.md#country
+      quote: ISO 3166-1-alpha-2
+  data-format-date-time:
+    - name: Dates and Times
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/type-formatting/type-formatting.md#dates-and-times
+  data-format:
+    - name: Hypermedia Response Format
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/response-format/response-format.md
+    - name: Type Formatting
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/type-formatting/type-formatting.md
+    - name: Message Schema and Postel's Law
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/message-schema/message-schema.md
+  developer-experience:
+    - name: Documentation
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/documentation/documentation.md
+  documentation:
+    - name: Every API MUST be described using a formal API description language
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/general-guidelines/general-guidelines.md#every-api-must-be-described-using-a-formal-api-description-language
+    - name: Documentation
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/documentation/documentation.md
+  errors:
+    - name: Error handling
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/error-handling/error-handling.md
+  global-design:
+    - name: Introduction
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/introduction/introduction.md
+    - name: General Guidelines
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/general-guidelines/general-guidelines.md
+    - name: Message Schema and Postel's Law
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/message-schema/message-schema.md
+  governance:
+    - name: API Modelling and Design Process
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/api-design-process/api-design-process.md#api-modelling-and-design-process
+    - name: API Design Review Process
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/api-design-review-process/api-design-review-process.md
+    - name: Message Schema and Postel's Law
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/message-schema/message-schema.md
+  http-caching:
+    - name: Caching
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/caching/caching.md
+  http-headers:
+    - name: Expires HTTP Header
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/caching/caching.md#expires-http-header
+    - name: https://github.com/Haufe-Lexware/api-style-guide/blob/master/caching/caching.md#cache-control-header
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/caching/caching.md#cache-control-header
+    - name: ETag
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/caching/caching.md#etag
+  http-status-200:
+    - name: HTTP Status (Get List of resources)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#http-status
+    - name: HTTP Status (Read Single Resource)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#http-status-1
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-201:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-204:
+    - name: HTTP Status (Update Single Resource)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#http-status-2
+    - name: HTTP Status (Update Partial Single Resource)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#http-status-3
+    - name: Delete Single Resource
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#delete-single-resource
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-304:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-400:
+    - name: HTTP Status (Get List of resources)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#http-status
+    - name: HTTP Status (Update Single Resource)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#http-status-2
+    - name: HTTP Status (Update Partial Single Resource)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#http-status-3
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-401:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-403:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-404:
+    - name: HTTP Status (Get List of resources)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#http-status
+    - name: HTTP Status (Read Single Resource)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#http-status-1
+    - name: Delete Single Resource
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#delete-single-resource
+      quote: 404 Not Found HTTP status should not be utilized
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-405:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-406:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-408:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-409:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-411:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-412:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-415:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-422:
+    - name: HTTP Status (Update Single Resource)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#http-status-2
+    - name: HTTP Status (Update Partial Single Resource)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#http-status-3
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-500:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-501:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-standard-error:
+    - name: Error handling
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/error-handling/error-handling.md
+  http-status:
+    - name: Mapping Response Codes For Success and Failure
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/api-design-process/api-design-process.md#mapping-response-codes-for-success-and-failure
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-methods-delete:
+    - name: HTTP Verbs
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-verbs/http-verbs.md
+  http-methods-get:
+    - name: HTTP Verbs
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-verbs/http-verbs.md
+    - name: Get List of resources
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#get-list-of-resources
+    - name: Read Single Resource
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#read-single-resource
+  http-methods-patch:
+    - name: HTTP Verbs
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-verbs/http-verbs.md
+    - name: Update Partial Single Resource
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#update-partial-single-resource
+  http-methods-post:
+    - name: HTTP Verbs
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-verbs/http-verbs.md
+    - name: Create New Resource
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#create-new-resource
+    - name: Using POST (Search)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/search/search.md#using-post
+  http-methods-put:
+    - name: HTTP Verbs
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-verbs/http-verbs.md
+    - name: Update Single Resource
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#update-single-resource
+    - name: Create New Resource - Consumer Supplied Identifier
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#create-new-resource---consumer-supplied-identifier
+  http-methods:
+    - name: HTTP Verbs
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-verbs/http-verbs.md
+  hypermedia-read:
+    - name: Expanding Resources Through Hypermedia Linking
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/api-design-process/api-design-process.md#expanding-resources-through-hypermedia-linking
+    - name: Hypermedia and REST
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/hypermedia-and-rest/hypermedia-and-rest.md
+    - name: Relationships and Sub-Resources
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/relationships-and-sub-resources/relationships-and-sub-resources.md
+    - name: Hypermedia Links (Pagination)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/filtering-sorting-field-selection-and-paging/filtering-sorting-field-selection-and-paging.md#hypermedia-links
+  hypermedia:
+    - name: Expanding Resources Through Hypermedia Linking
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/api-design-process/api-design-process.md#expanding-resources-through-hypermedia-linking
+    - name: Support Hypermedia
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/rest-principles/rest-principles.md#support-hypermedia
+    - name: Hypermedia and REST
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/hypermedia-and-rest/hypermedia-and-rest.md
+    - name: Relationships and Sub-Resources
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/relationships-and-sub-resources/relationships-and-sub-resources.md
+    - name: Hypermedia Links (Pagination)
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/filtering-sorting-field-selection-and-paging/filtering-sorting-field-selection-and-paging.md#hypermedia-links
+    - name: Hypermedia Response Format
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/response-format/response-format.md
+  naming:
+    - name: Building Your Resource Taxonomy
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/api-design-process/api-design-process.md#building-your-resource-taxonomy
+    - name: Resource naming
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#resource-naming
+  resource-creation-with-id:
+    - name: Create New Resource - Consumer Supplied Identifier
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#create-new-resource---consumer-supplied-identifier
+  resource-creation:
+    - name: Create New Resource
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#create-new-resource
+  resource-deletion:
+    - name: Delete Single Resource
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#delete-single-resource
+  resource-id:
+    - name: Composite Keys
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/faq/faq.md#composite-keys
+  resource-relationships:
+    - name: How to Handle Resource Relationships and Composition
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/api-design-process/api-design-process.md#how-to-handle-resource-relationships-and-composition
+    - name: Relationships and Sub-Resources
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/relationships-and-sub-resources/relationships-and-sub-resources.md
+  resource-replacement:
+    - name: Update Single Resource
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#update-single-resource
+  resource-retrieve-dereference:
+    name: Dereference Relationships
+    description: How to load a resource and its linked resources in one call
+  resource-retrieve-partial:
+    - name: Field selection
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/filtering-sorting-field-selection-and-paging/filtering-sorting-field-selection-and-paging.md#field-selection
+  resource-retrieve:
+    - name: Read Single Resource
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#read-single-resource
+  resource-state:
+    name: Resource's state
+    description: How to change a resource's state/status (like processed/sent/paid/...)
+  resource-update-partial:
+    - name: Update Partial Single Resource
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#update-partial-single-resource
+  resource-update:
+    - name: Update Single Resource
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#update-single-resource
+    - name: Update Partial Single Resource
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#update-partial-single-resource
+  resource-url-format:
+    - name: URI Components
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/uri-components/uri-components.md
+  resource:
+    - name: Building Your Resource Taxonomy
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/api-design-process/api-design-process.md#building-your-resource-taxonomy
+    - name: Defining Resource Lifecycles
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/api-design-process/api-design-process.md#defining-resource-lifecycles
+    - name: Resources
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/resources/resources.md
+  security:
+    - name: API clients MUST use an API Key
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/general-guidelines/general-guidelines.md#api-clients-must-use-an-api-key
+  security-data:
+    - name: Security and Authentication
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/security-and-authentication/security-and-authentication.md
+  versioning:
+    - name: Version
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/uri-components/uri-components.md#version

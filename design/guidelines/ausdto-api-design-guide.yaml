@@ -1,0 +1,121 @@
+id: ausdto-api-design-guide
+title: API Design Guide
+type: website
+url: https://apiguide.readthedocs.io/en/latest/index.html
+company: Australian Digital Transformation Office
+companyLogoUrl: /media/logos/ausdto.png
+companyUrl: https://www.dto.gov.au/
+date: 2015-10-20
+reviewDate: 2016-08-18
+
+topics:
+  collection-pagination:
+    - name: Batching results
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/batching_results.html
+  cors:
+    - name: Support cross-domain mashups with CORS
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/cors.html
+  developer-experience:
+    - name: Empathy
+      url: https://apiguide.readthedocs.io/en/latest/principles/empathy.html
+    - name: Errors
+      url: https://apiguide.readthedocs.io/en/latest/principles/errors.html
+    - name: Endpoint Stability
+      url: https://apiguide.readthedocs.io/en/latest/principles/availability.html
+  documentation:
+    - name: Discoverability
+      url: https://apiguide.readthedocs.io/en/latest/principles/discoverability.html
+    - name: Document your API
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/documentation.html
+  governance:
+    - name: Register your API
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/advertise.html
+  http-content-negotiation:
+    - name: Formats
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_RESTful_urls.html#formats
+    - name: API Payload format encoding
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_RESTful_urls.html#api-payload-format-encoding
+  http-status-200:
+    - name: GET /magazines
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#get--magazines
+    - name: PUT /magazines
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#put--magazines
+    - name: DELETE /magazines
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#delete--magazines
+    - name: DELETE /magazines/1234
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#delete--magazines-1234
+    - name: HEAD /magazines
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#head--magazines
+    - name: HEAD /magazines/1234
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#head--magazines-1234
+  http-status-201:
+    - name: Use HTTP methods and status codes
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#use-http-methods-and-status-codes
+    - name: PUT /magazines/1234
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#put--magazines-1234
+  http-status-404:
+    - name: GET /magazines
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#get--magazines
+  http-status-405:
+    - name: Use HTTP methods and status codes
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#use-http-methods-and-status-codes
+  http-status-standard-error:
+    - name: HTTP response principles
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#http-response-principles
+  http-methods-delete:
+    - name: DELETE /magazines
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#delete--magazines
+    - name: DELETE /magazines/1234
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#delete--magazines-1234
+  http-methods-get:
+    - name: GET /magazines
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#get--magazines
+  http-methods-head:
+    - name: HEAD /magazines
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#head--magazines
+    - name: HEAD /magazines/1234
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#head--magazines-1234
+  http-methods-post:
+    - name: POST /magazines
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#post--magazines
+  http-methods-put:
+    - name: PUT /magazines
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#put--magazines
+    - name: PUT /magazines/1234
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#put--magazines-1234
+  http-methods:
+    - name: Use HTTP methods and status codes
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_HTTP_methods.html#use-http-methods-and-status-codes
+  hypermedia-read:
+    - name: Management state with HATEOAS
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/hateos.html
+  hypermedia-write:
+    - name: Management state with HATEOAS
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/hateos.html
+  hypermedia:
+    - name: Management state with HATEOAS
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/hateos.html
+  global-design:
+    - name: Granularity
+      url: https://apiguide.readthedocs.io/en/latest/principles/granularity.html
+    - name: Functionality
+      url: https://apiguide.readthedocs.io/en/latest/principles/coverage.html
+  resource-relationships:
+    - name: Management state with HATEOAS
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/hateos.html
+  resource-url-format:
+    - name: URL Depth
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_RESTful_urls.html#url-depth
+    - name: Good RESTful URL examples
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_RESTful_urls.html#good-restful-url-examples
+  security:
+    - name: Privacy and security
+      url: https://apiguide.readthedocs.io/en/latest/principles/security.html
+  security-data:
+    - name: Privacy and security
+      url: https://apiguide.readthedocs.io/en/latest/principles/security.html
+  versioning:
+    - name: Versioning
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/use_RESTful_urls.html#versioning
+    - name: Use versions
+      url: https://apiguide.readthedocs.io/en/latest/build_and_publish/versioning.html

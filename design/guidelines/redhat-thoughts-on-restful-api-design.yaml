@@ -1,0 +1,126 @@
+id: redhat-thoughts-on-restful-api-design
+title: Thoughts on RESTful API Design
+type: website
+url: http://restful-api-design.readthedocs.io/en/latest/
+company: Red Hat
+companyLogoUrl: /media/logos/redhat.png
+companyUrl: https://www.redhat.com/
+authors: 
+  - name: Geert Jansen
+    twitter: 1geertj
+date: 2012-11-15
+reviewDate: 2016-08-18
+
+topics:
+  asynchronicity:
+    - name: Asynchronous Requests
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html#asynchronous-requests
+  collection-filtering:
+  collection-pagination:
+    - name: Ranges Pagination
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html#ranges-pagination
+  collection-retrieve:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  collection:
+    - name: URLs
+      url: http://restful-api-design.readthedocs.io/en/latest/urls.html
+  data-format:
+    - name: Resource Data
+      url: http://restful-api-design.readthedocs.io/en/latest/resources.html#resource-data
+  documentation:
+    - name: Forms
+      quote: ... without referring to external documentation, an API user does not know what data to provide to operations that take input.
+      url: http://restful-api-design.readthedocs.io/en/latest/forms.html
+  guiding-input:
+    - name: Forms
+      quote: ... without referring to external documentation, an API user does not know what data to provide to operations that take input.
+      url: http://restful-api-design.readthedocs.io/en/latest/forms.html
+  http-content-negotiation:
+    - name: Representations
+      url: http://restful-api-design.readthedocs.io/en/latest/resources.html#representations
+    - name: Content-Types
+      url: http://restful-api-design.readthedocs.io/en/latest/resources.html#content-types
+  http-headers:
+    - name: Link Headers
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html#link-headers
+  http-status-405:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  http-methods-delete:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  http-methods-get:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  http-methods-head:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  http-methods-options:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  http-methods-patch:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  http-methods-post:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  http-methods-put:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  http-methods:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  hypermedia-read:
+    - name: REST Metadata
+      url: http://restful-api-design.readthedocs.io/en/latest/resources.html#rest-metadata
+    - name: Link Headers
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html#link-headers
+    - name: Relationships
+      url: http://restful-api-design.readthedocs.io/en/latest/relationships.html
+  hypermedia-write:
+    - name: Forms
+      quote: ... without referring to external documentation, an API user does not know what data to provide to operations that take input.
+      url: http://restful-api-design.readthedocs.io/en/latest/forms.html
+  hypermedia:
+    - name: REST Metadata
+      url: http://restful-api-design.readthedocs.io/en/latest/resources.html#rest-metadata
+    - name: Link Headers
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html#link-headers
+    - name: Relationships
+      url: http://restful-api-design.readthedocs.io/en/latest/relationships.html
+  notifications-server-events:
+    - name: Notifications
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html#notifications
+  resource-action:
+    - name: Actions
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html#actions
+  resource-creation:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  resource-deletion:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  resource-id:
+    - name: REST Metadata
+      url: http://restful-api-design.readthedocs.io/en/latest/resources.html#rest-metadata
+  resource-update-partial:
+    - name: PATCH vs PUT
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html#patch-vs-put
+  resource-relationships:
+    - name: Relationships
+      url: http://restful-api-design.readthedocs.io/en/latest/relationships.html
+  resource-retrieve:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  resource-update:
+    - name: Methods
+      url: http://restful-api-design.readthedocs.io/en/latest/methods.html
+  resource-url-format:
+    - name: URLs
+      url: http://restful-api-design.readthedocs.io/en/latest/urls.html
+  resource:
+    - name: Resources
+      url: http://restful-api-design.readthedocs.io/en/latest/resources.html
+    - name: URLs
+      url: http://restful-api-design.readthedocs.io/en/latest/urls.html

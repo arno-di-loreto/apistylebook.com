@@ -1,0 +1,355 @@
+id: zalando-restful-api-guidelines
+title: RESTFul API Guidelines
+type: website
+url: http://zalando.github.io/restful-api-guidelines/
+company: Zalando
+companyLogoUrl: /media/logos/zalando.png
+companyUrl: https://tech.zalando.de/
+date: 2016-01-22
+reviewDate: 2016-08-28
+
+topics:
+  api-counts:
+    - name: Limit of Resources
+      url: http://zalando.github.io/restful-api-guidelines/resources/Resources.html#should-limit-of-resources
+      quote: a typical range of resources for a well-designed API is between 4 and 8
+  asynchronicity:
+    - name: Events
+      url: http://zalando.github.io/restful-api-guidelines/events/events.html  
+  collection-filtering:
+    - name: Use Conventional Query Strings
+      quote: q — default query parameter
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#could-use-conventional-query-strings 
+  collection-pagination:
+    - name: Use Conventional Query Strings
+      quote: limit, cursor, offset
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#could-use-conventional-query-strings
+    - name: Pagination
+      url: http://zalando.github.io/restful-api-guidelines/pagination/Pagination.html 
+  collection-retrieve:
+    - name: GET
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#get
+      quote: reads a resource or set of resource instances
+  collection-sorting:
+    - name: Use Conventional Query Strings
+      quote: sort — comma-separated list of fields to sort
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#could-use-conventional-query-strings
+  collection:
+    - name: Resources
+      url: http://zalando.github.io/restful-api-guidelines/resources/Resources.html
+  data-standards:
+    - name: Standards could be used for Language, Country and Currency
+      url: http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#could-standards-could-be-used-for-language-country-and-currency
+    - name: Use Standards for Country, Language and Currency Codes
+      url: http://zalando.github.io/restful-api-guidelines/data-formats/DataFormats.html#could-use-standards-for-country-language-and-currency-codes
+  data-format-date-time:
+    - name: Date property values should conform to RFC 3399
+      url: http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#should-date-property-values-should-conform-to-rfc-3399
+    - name: Time durations and intervals could conform to ISO 8601
+      url: http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#could-time-durations-and-intervals-could-conform-to-iso-8601
+    - name: Use Standard Date and Time Formats
+      url: http://zalando.github.io/restful-api-guidelines/data-formats/DataFormats.html#must-use-standard-date-and-time-formats
+    - name: HTTP headers
+      url: http://zalando.github.io/restful-api-guidelines/data-formats/DataFormats.html#http-headers
+      quote: Use the HTTP date format defined in RFC 7231
+  data-format-null:
+    - name: Property values
+      url: http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#property-values
+    - name: Null values should have their fields removed
+      url: http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#should-null-values-should-have-their-fields-removed
+    - name: Boolean property values must not be null
+      url: http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#must-boolean-property-values-must-not-be-null
+    - name: Empty array values should not be null
+      url: http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#should-empty-array-values-should-not-be-null
+  data-format:
+    - name: Property Values
+      url: http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#property-values
+    - name: Date property values should conform to RFC 3399
+      url: http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#should-date-property-values-should-conform-to-rfc-3399
+    - name: Time durations and intervals could conform to ISO 8601
+      url: http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#could-time-durations-and-intervals-could-conform-to-iso-8601
+    - name: Data Formats
+      url: http://zalando.github.io/restful-api-guidelines/data-formats/DataFormats.html
+    - name: Common Data Objects
+      url: http://zalando.github.io/restful-api-guidelines/common-data-objects/CommonDataObjects.html
+  documentation:
+    - name: Provide External Documentation
+      url: http://zalando.github.io/restful-api-guidelines/general-guidelines/GeneralGuidelines.html#should-provide-external-documentation
+    - name: Reflect Deprecation in API Definition
+      url: http://zalando.github.io/restful-api-guidelines/deprecation/Deprecation.html#must-reflect-deprecation-in-api-definition
+  global-design:
+    - name: Design Principles
+      url: http://zalando.github.io/restful-api-guidelines/design-principles/DesignPrinciples.html
+  governance:
+    - name: API First
+      url: http://zalando.github.io/restful-api-guidelines/general-guidelines/GeneralGuidelines.html#must-api-first-define-apis-using-openapi
+    - name: Deprecation
+      url: http://zalando.github.io/restful-api-guidelines/deprecation/Deprecation.html
+    - name: API Discovery
+      url: http://zalando.github.io/restful-api-guidelines/api-discovery/ApiDiscovery.html
+  http-caching:
+    - name: Support the ETag Header
+      url: http://zalando.github.io/restful-api-guidelines/performance/Performance.html#could-support-the-etag-header
+  http-content-negotiation:
+    - name: Use Media Type Versioning
+      url: http://zalando.github.io/restful-api-guidelines/compatibility/Compatibility.html#must-use-media-type-versioning
+    - name: Modify the Content-Type for Embedded Resources
+      url: http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-modify-the-contenttype-for-embedded-resources
+    - name: Use Application-Specific Content Types
+      url: http://zalando.github.io/restful-api-guidelines/data-formats/DataFormats.html#could-use-applicationspecific-content-types
+  http-headers:
+    - name: You Must Hyphenate HTTP Headers
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#must-you-must-hyphenate-http-headers
+    - name: Prefer Hyphenated-Pascal-Case for HTTP header Fields
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#should-prefer-hyphenatedpascalcase-for-http-header-fields
+    - name: Use Standardized Headers
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#could-use-standardized-headers
+    - name: Use 429 with Headers for Rate Limits
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#must-use-429-with-headers-for-rate-limits
+    - name: Do Not Use Link Headers with JSON entities
+      url: http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-do-not-use-link-headers-with-json-entities
+    - name: HTTP headers
+      url: http://zalando.github.io/restful-api-guidelines/data-formats/DataFormats.html#http-headers
+      quote: Use the HTTP date format defined in RFC 7231
+    - name: Common Headers
+      url: http://zalando.github.io/restful-api-guidelines/headers/CommonHeaders.html
+    - name: Proprietary Headers
+      url: http://zalando.github.io/restful-api-guidelines/headers/ProprietaryHeaders.html
+    - name: Add a Warning Header to Responses
+      url: http://zalando.github.io/restful-api-guidelines/deprecation/Deprecation.html#should-add-a-warning-header-to-responses
+  http-status-200:
+    - name: Success Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#success-codes
+  http-status-201:
+    - name: Success Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#success-codes
+  http-status-202:
+    - name: Success Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#success-codes
+  http-status-204:
+    - name: Success Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#success-codes
+  http-status-301:
+    - name: Redirection Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#redirection-codes
+  http-status-302:
+    name: HTTP Status 302
+    description: When to use HTTP status 302
+  http-status-303:
+    - name: Redirection Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#redirection-codes
+  http-status-304:
+    - name: Redirection Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#redirection-codes
+  http-status-400:
+    - name: Client Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes
+  http-status-401:
+    - name: Client Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes
+  http-status-403:
+    - name: Client Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes
+  http-status-404:
+    - name: Client Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes
+  http-status-405:
+    - name: Client Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes
+  http-status-406:
+    - name: Client Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes
+  http-status-408:
+    - name: Client Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes
+  http-status-409:
+    - name: Client Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes
+  http-status-412:
+    - name: Client Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes
+  http-status-415:
+    - name: Client Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes
+  http-status-423:
+    - name: Client Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes
+  http-status-428:
+    - name: Client Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes
+  http-status-429:
+    - name: Client Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#client-side-error-codes
+    - name: Use 429 with Headers for Rate Limits
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#must-use-429-with-headers-for-rate-limits
+  http-status-500:
+    - name: Server Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#server-side-error-codes
+  http-status-501:
+    - name: Server Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#server-side-error-codes
+  http-status-503:
+    - name: Server Side Error Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#server-side-error-codes
+  http-status-standard-error:
+    - name: Providing Error Documentation
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#must-providing-error-documentation
+    - name: Use Problem JSON
+      url: http://zalando.github.io/restful-api-guidelines/common-data-objects/CommonDataObjects.html#must-use-problem-json
+  http-status:
+    - name: Use Meaningful HTTP Status Codes
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#must-use-meaningful-http-status-codes
+  http-methods-delete:
+    - name: DELETE
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#delete
+  http-methods-get:
+    - name: GET
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#get
+  http-methods-head:
+    - name: HEAD
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#head
+  http-methods-options:
+    - name: OPTIONS
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#options
+  http-methods-patch:
+    - name: PATCH
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#patch
+  http-methods-post:
+    - name: POST
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#post
+  http-methods-put:
+    - name: PUT
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#put
+  http-methods:
+    - name: Use HTTP Methods Correctly
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#must-use-http-methods-correctly
+    - name: HTTP Methods must Fulfill Safeness and Idempotency Properties
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#must--http-methods-must-fulfill-safeness-and-idempotency-properties
+  http:
+    - name: HTTP
+      description: http://zalando.github.io/restful-api-guidelines/http/Http.html
+  hypermedia-read:
+    - name: Use Pagination Links Where Applicable
+      url: http://zalando.github.io/restful-api-guidelines/pagination/Pagination.html#could-use-pagination-links-where-applicable
+    - name: Use a well-defined subset of HAL
+      url: http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-use-a-welldefined-subset-of-hal
+    - name: Use Custom Link Relations
+      url: http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#could-use-custom-link-relations
+    - name: Do Not Use Link Headers with JSON entities
+      url: http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-do-not-use-link-headers-with-json-entities
+  hypermedia:
+    - name: Use Pagination Links Where Applicable
+      url: http://zalando.github.io/restful-api-guidelines/pagination/Pagination.html#could-use-pagination-links-where-applicable
+    - name: Hypermedia
+      url: http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html
+    - name: Use a well-defined subset of HAL
+      url: http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-use-a-welldefined-subset-of-hal
+    - name: Do Not Use Link Headers with JSON entities
+      url: http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-do-not-use-link-headers-with-json-entities
+  naming-language:
+    - name: Write APIs in U.S. English
+      url: http://zalando.github.io/restful-api-guidelines/general-guidelines/GeneralGuidelines.html#must-write-apis-in-us-english
+  naming-case:
+    - name: Property names must be snake_case
+      url: http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#must-property-names-must-be-snakecase-and-never-camelcase
+  naming:
+    - name: Property naming
+      url: http://zalando.github.io/restful-api-guidelines/json-guidelines/JsonGuidelines.html#property-naming
+    - name: API Naming
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html
+    - name: Use Domain-Specific Resource Names
+      url: http://zalando.github.io/restful-api-guidelines/resources/Resources.html#must-use-domainspecific-resource-names
+  notifications-server-events:
+    - name: Events
+      url: http://zalando.github.io/restful-api-guidelines/events/events.html
+  performance:
+    name: Performance
+    url: http://zalando.github.io/restful-api-guidelines/performance/Performance.html
+  query-parameter:
+    - name: Query parameters must be snake_case (never camelCase)
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#must-query-parameters-must-be-snakecase-never-camelcase
+    - name: Use Conventional Query Strings
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#could-use-conventional-query-strings
+  resource-action:
+    - name: Avoid Actions — Think About Resources
+      url: http://zalando.github.io/restful-api-guidelines/resources/Resources.html#must-avoid-actions-—-think-about-resources
+  resource-creation:
+    - name: POST
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#post
+      quote: creates a resource instance
+  resource-deletion:
+    - name: DELETE
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#delete
+      quote: deletes a resource instance
+  resource-relationships:
+    - name: Use a well-defined subset of HAL
+      url: http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-use-a-welldefined-subset-of-hal
+    - name: Use Custom Link Relations
+      url: http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#could-use-custom-link-relations
+    - name: Do Not Use Link Headers with JSON entities
+      url: http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-do-not-use-link-headers-with-json-entities
+  resource-replacement:
+    - name: PUT
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#put
+      quote: fully uploads an entity
+  resource-retrieve-dereference:
+    - name: Use Conventional Query Strings
+      quote: embed — to expand embedded entities
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#could-use-conventional-query-strings
+    - name: Define useful resources
+      url: http://zalando.github.io/restful-api-guidelines/resources/Resources.html#should-define-useful-resources
+    - name: Allow Optional Embedding of Sub-Resources
+      url: http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#should-allow-optional-embedding-of-subresources
+    - name: Modify the Content-Type for Embedded Resources
+      url: http://zalando.github.io/restful-api-guidelines/hyper-media/Hypermedia.html#must-modify-the-contenttype-for-embedded-resources
+  resource-retrieve-partial:
+    - name: Use Conventional Query Strings
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#could-use-conventional-query-strings
+      quote: fields — to retrieve a subset of fields
+    - name: Define useful resources
+      url: http://zalando.github.io/restful-api-guidelines/resources/Resources.html#should-define-useful-resources
+    - name: Support Filtering of Resource Fields
+      url: http://zalando.github.io/restful-api-guidelines/performance/Performance.html#should-support-filtering-of-resource-fields
+  resource-retrieve:
+    - name: GET
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#get
+      quote: reads a resource or set of resource instances
+  resource-update-partial:
+    - name: PATCH
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#patch
+      quote: only a specific subset of resource fields are replaced
+  resource-update:
+    - name: PUT
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#put
+    - name: PATCH
+      url: http://zalando.github.io/restful-api-guidelines/http/Http.html#patch
+  resource-url-format:
+    - name: Path segments must be lowercase separate words with hyphens
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#must-path-segments-must-be-lowercase-separate-words-with-hyphens
+    - name: Always Pluralize Resource Names
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#must-always-pluralize-resource-names
+    - name: First Path segment May be /api
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#could-first-path-segment-may-be-api
+    - name: Avoid Trailing Slashes
+      url: http://zalando.github.io/restful-api-guidelines/naming/Naming.html#must-avoid-trailing-slashes
+    - name: Limit of Sub-Resource Levels
+      url: http://zalando.github.io/restful-api-guidelines/resources/Resources.html#should-limit-of-subresource-levels
+  resource:
+    - name: resources
+      url: http://zalando.github.io/restful-api-guidelines/resources/Resources.html
+  security:
+    - name: Security
+      url: http://zalando.github.io/restful-api-guidelines/security/Security.html
+    - name: Secure Endpoints with OAuth 2.0
+      url: http://zalando.github.io/restful-api-guidelines/security/Security.html#must-secure-endpoints-with-oauth-20
+    - name: Define and Assign Access Rights (Scopes)
+      url: http://zalando.github.io/restful-api-guidelines/security/Security.html#must-define-and-assign-access-rights-scopes
+  versioning:
+    - name: Compatibility
+      url: http://zalando.github.io/restful-api-guidelines/compatibility/Compatibility.html
+    - name: Don’t Break Backward Compatibility
+      url: http://zalando.github.io/restful-api-guidelines/compatibility/Compatibility.html#must-dont-break-backward-compatibility
+    - name: Avoid Versioning
+      url: http://zalando.github.io/restful-api-guidelines/compatibility/Compatibility.html#should-avoid-versioning
+    - name: Use Media Type Versioning
+      url: http://zalando.github.io/restful-api-guidelines/compatibility/Compatibility.html#must-use-media-type-versioning

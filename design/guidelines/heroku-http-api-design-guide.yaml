@@ -1,0 +1,141 @@
+id: heroku-http-api-design-guide
+title: HTTP API Design Guide
+type: gitbook
+url: https://geemus.gitbooks.io/http-api-design/content/en/
+company: Heroku
+companyLogoUrl: /media/logos/heroku.png
+companyUrl: https://devcenter.heroku.com/articles/platform-api-reference
+date: 2016-07-05
+reviewDate: 2016-08-31
+
+topics:
+  collection-pagination:
+    - name: Divide Large Responses Across Requests with Ranges
+      description: https://geemus.gitbooks.io/http-api-design/content/en/foundations/divide-large-responses-across-requests-with-ranges.html 
+  data-format-date-time:
+    - name: Provide standard timestamps
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/provide-standard-timestamps.html
+    - name: Use UTC times formatted in ISO8601
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/use-utc-times-formatted-in-iso8601.html
+  data-format:
+    - name: Accept serialized JSON in request bodies
+      url: https://geemus.gitbooks.io/http-api-design/content/en/requests/accept-serialized-json-in-request-bodies.html
+    - name: Provide standard timestamps
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/provide-standard-timestamps.html
+    - name: Nest foreign key relations
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/nest-foreign-key-relations.html
+    - name: Keep JSON minified in all responses
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/keep-json-minified-in-all-responses.html
+  debug-diagnose:
+    - name: Provide Request-Ids for Introspection
+      url: https://geemus.gitbooks.io/http-api-design/content/en/foundations/provide-request-ids-for-introspection.html
+  documentation:
+    - name: Provide machine-readable JSON schema
+      url: https://geemus.gitbooks.io/http-api-design/content/en/artifacts/provide-machine-readable-json-schema.html
+    - name: Provide human-readable docs
+      url: https://geemus.gitbooks.io/http-api-design/content/en/artifacts/provide-human-readable-docs.html
+    - name: Provide executable examples
+      url: https://geemus.gitbooks.io/http-api-design/content/en/artifacts/provide-executable-examples.html
+  global-design:
+    - name: Separate Concerns
+      url: https://geemus.gitbooks.io/http-api-design/content/en/foundations/separate-concerns.html
+  http-caching:
+    - name: Support ETags for Caching
+      url: https://geemus.gitbooks.io/http-api-design/content/en/foundations/support-etags-for-caching.html
+  http-headers:
+    - name: Require Versioning in the Accepts Header
+      url: https://geemus.gitbooks.io/http-api-design/content/en/foundations/require-versioning-in-the-accepts-header.html
+    - name: Support ETags for Caching
+      url: https://geemus.gitbooks.io/http-api-design/content/en/foundations/support-etags-for-caching.html
+    - name: Provide Request-Ids for Introspection
+      url: https://geemus.gitbooks.io/http-api-design/content/en/foundations/provide-request-ids-for-introspection.html
+    - name: Divide Large Responses Across Requests with Ranges
+      description: https://geemus.gitbooks.io/http-api-design/content/en/foundations/divide-large-responses-across-requests-with-ranges.html 
+  http-status-200:
+    - name: Return appropriate status codes
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html
+  http-status-201:
+    - name: Return appropriate status codes
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html
+  http-status-202:
+    - name: Return appropriate status codes
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html
+  http-status-206:
+    - name: Return appropriate status codes
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html
+  http-status-401:
+    - name: Return appropriate status codes
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html
+  http-status-403:
+    - name: Require Secure Connections
+      url: https://geemus.gitbooks.io/http-api-design/content/en/foundations/require-secure-connections.html
+    - name: Return appropriate status codes
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html
+  http-status-422:
+    - name: Return appropriate status codes
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html
+  http-status-429:
+    - name: Return appropriate status codes
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html
+  http-status-500:
+    - name: Return appropriate status codes
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html
+  http-status-standard-error:
+    - name: Generate structured errors
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/generate-structured-errors.html
+  http-status:
+    - name: Return appropriate status codes
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/return-appropriate-status-codes.html
+  naming-case:
+    - name: Downcase paths and attributes
+      url: https://geemus.gitbooks.io/http-api-design/content/en/requests/downcase-paths-and-attributes.html
+  naming:
+    - name: Resource names
+      url: https://geemus.gitbooks.io/http-api-design/content/en/requests/resource-names.html
+  performance:
+    - name: Keep JSON minified in all responses
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/keep-json-minified-in-all-responses.html
+  rate-limiting:
+    - name: Show rate limit status
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/show-rate-limit-status.html
+  resource-action:
+    - name: Actions
+      url: https://geemus.gitbooks.io/http-api-design/content/en/requests/actions.html
+  resource-creation:
+    - name: Provide full resources where available
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/provide-full-resources-where-available.html
+  resource-deletion:
+    - name: Provide full resources where available
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/provide-full-resources-where-available.html
+  resource-id-semantic:
+    - name: Support non-id dereferencing for convenience
+      url: https://geemus.gitbooks.io/http-api-design/content/en/requests/support-non-id-dereferencing-for-convenience.html
+  resource-id:
+    - name: Support non-id dereferencing for convenience
+      url: https://geemus.gitbooks.io/http-api-design/content/en/requests/support-non-id-dereferencing-for-convenience.html
+    - name: Provide resource (UU)IDs
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/provide-resource-uuids.html
+  resource-relationships:
+    - name: Nest foreign key relations
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/nest-foreign-key-relations.html
+  resource-retrieve:
+    - name: Provide full resources where available
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/provide-full-resources-where-available.html
+  resource-update:
+    - name: Provide full resources where available
+      url: https://geemus.gitbooks.io/http-api-design/content/en/responses/provide-full-resources-where-available.html
+  resource-url-format:
+    - name: Use consistent path formats
+      url: https://geemus.gitbooks.io/http-api-design/content/en/requests/use-consistent-path-formats.html
+    - name: Downcase paths and attributes
+      url: https://geemus.gitbooks.io/http-api-design/content/en/requests/downcase-paths-and-attributes.html
+    - name: Minimize path nesting
+      url: https://geemus.gitbooks.io/http-api-design/content/en/requests/minimize-path-nesting.html
+  security:
+    - name: Require Secure Connections
+      url: https://geemus.gitbooks.io/http-api-design/content/en/foundations/require-secure-connections.html
+  versioning:
+    - name: Require Versioning in the Accepts Header
+      url: https://geemus.gitbooks.io/http-api-design/content/en/foundations/require-versioning-in-the-accepts-header.html
+    - name: Describe stability
+      url: https://geemus.gitbooks.io/http-api-design/content/en/artifacts/describe-stability.html
