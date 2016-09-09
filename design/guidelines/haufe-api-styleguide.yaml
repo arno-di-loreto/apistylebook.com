@@ -139,6 +139,9 @@ topics:
   http-status-409:
     - name: HTTP Status Codes
       url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
+  http-status-410:
+    - name: HTTP Status Codes
+      url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
   http-status-411:
     - name: HTTP Status Codes
       url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/http-status-codes/http-status-codes.md
