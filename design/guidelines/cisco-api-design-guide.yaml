@@ -8,26 +8,6 @@ companyUrl: http://developer.cisco.com/
 date: 2015-08-21
 reviewDate: 2016-08-18
 
-attachedDocuments:
-  - name: REST API Design Principles
-    description: A summary of common REST API design constraints and conventions 
-    url: https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md
-    type: github
-    referenced:
-      - name: Preface
-        url: https://github.com/CiscoDevNet/api-design-guide#1-preface
-  - name: Tracking ID flow  
-    description: A sequence diagram explaning 
-    url: https://github.com/CiscoDevNet/api-design-guide/blob/master/trackingid-flow.png
-    type: github
-    referenced:
-      - name: TrackingID Header
-        description: A sequence diagram explaning the use of the tracking ID
-        url: https://github.com/CiscoDevNet/api-design-guide#352-trackingid-header
-
-remarks:
-  - broken links due to typo error in https://github.com/CiscoDevNet/api-design-guide#36-http-verbs
-
 topics:
   security:
     - name: 3.1 Security
@@ -129,9 +109,9 @@ topics:
       quote: RFC-3986
       url: https://github.com/CiscoDevNet/api-design-guide#363-get
   resource-retrieve-dereference:
-    - name: 
+    - name: 3.6.3 GET
       quote: If a service supports the fields parameter, then a value of @reference, @narrow, or @wide SHOULD...
-      url: 
+      url: https://github.com/CiscoDevNet/api-design-guide#363-get
   resource-creation:
     - name: 3.6.1 POST
       url: https://github.com/CiscoDevNet/api-design-guide#361-post
@@ -187,12 +167,14 @@ topics:
     - name: 3.3 Representations
       quote: RFC-3339
       url: https://github.com/CiscoDevNet/api-design-guide#33-representations
+      quote: 3.3.8 Date and time fields MUST be represented as strings and formatted according to RFC-3339
   data-format-null:
     - name: JSON Attributes
       url: https://github.com/CiscoDevNet/api-design-guide/blob/master/principles.md#json-attributes
   undo:
-    - name: "*3.6.4.3 *The POST verb MAY be used to reverse the soft-delete of a resource, using an undelete parameter"
+    - name: 3.6 HTTP Verbs
       url: https://github.com/CiscoDevNet/api-design-guide#36-http-verbs
+      quote: "*3.6.4.3 *The POST verb MAY be used to reverse the soft-delete of a resource, using an undelete parameter" 
   versioning:
     - name: 3.13 Versioning
       url: https://github.com/CiscoDevNet/api-design-guide#313-versioning
