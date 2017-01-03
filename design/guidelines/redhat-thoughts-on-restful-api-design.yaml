@@ -5,6 +5,7 @@ url: http://restful-api-design.readthedocs.io/en/latest/
 company: Red Hat
 companyLogoUrl: /media/logos/redhat.png
 companyUrl: https://www.redhat.com/
+screenshotUrl: /media/screenshots/redhat-thoughts-on-restful-api-design.png
 authors: 
   - name: Geert Jansen
     twitter: 1geertj
@@ -15,7 +16,6 @@ topics:
   asynchronicity:
     - name: Asynchronous Requests
       url: http://restful-api-design.readthedocs.io/en/latest/methods.html#asynchronous-requests
-  collection-filtering:
   collection-pagination:
     - name: Ranges Pagination
       url: http://restful-api-design.readthedocs.io/en/latest/methods.html#ranges-pagination

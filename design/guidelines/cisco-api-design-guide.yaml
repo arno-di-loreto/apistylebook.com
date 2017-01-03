@@ -5,6 +5,7 @@ url: https://github.com/CiscoDevNet/api-design-guide
 company: Cisco
 companyLogoUrl: /media/logos/cisco.png
 companyUrl: http://developer.cisco.com/
+screenshotUrl: /media/screenshots/cisco-api-design-guide.png
 date: 2015-08-21
 reviewDate: 2016-08-18
 
@@ -165,7 +166,6 @@ topics:
       url: https://github.com/CiscoDevNet/api-design-guide#33-representations
   data-format-date-time:
     - name: 3.3 Representations
-      quote: RFC-3339
       url: https://github.com/CiscoDevNet/api-design-guide#33-representations
       quote: 3.3.8 Date and time fields MUST be represented as strings and formatted according to RFC-3339
   data-format-null:

@@ -5,6 +5,7 @@ url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/readme.md
 company: Haufe
 companyLogoUrl: /media/logos/haufe.png
 companyUrl: http://dev.haufe.com/
+screenshotUrl: /media/screenshots/haufe-api-styleguide.png
 date: 2015-01-15
 reviewDate: 2016-08-31
 
@@ -251,9 +252,6 @@ topics:
   resource-replacement:
     - name: Update Single Resource
       url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/collection-resources/collection-resources.md#update-single-resource
-  resource-retrieve-dereference:
-    name: Dereference Relationships
-    description: How to load a resource and its linked resources in one call
   resource-retrieve-partial:
     - name: Field selection
       url: https://github.com/Haufe-Lexware/api-style-guide/blob/master/filtering-sorting-field-selection-and-paging/filtering-sorting-field-selection-and-paging.md#field-selection
