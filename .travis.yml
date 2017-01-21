@@ -1,0 +1,28 @@
+language: node_js
+
+node_js:
+  - 6
+
+cache: bundler
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - DEPLOY_REPO_WEB=https://github.com/arno-di-loreto/apistylebook-web.git
+    - DEPLOY_BRANCH_WEB=gh-pages
+    - JEKYLL_ENV=production
+
+before_install:
+  - rvm install 2.0.0
+install: scripts/install.sh
+script: scripts/build.sh
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: scripts/deploy-all.sh
+  on:
+    branch: master

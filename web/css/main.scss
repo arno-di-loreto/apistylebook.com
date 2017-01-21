@@ -1,0 +1,204 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+/* main background */
+.full {
+    background: url('{{ "/images/blueprints-textures.png" | prepend: site.baseurl | prepend: site.github.url }}') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* For nav bar */
+  padding-top: 50px;
+  /* Margin bottom by footer height */
+  // margin-bottom: 40px;
+  color: #124266;
+}
+
+.footer {
+  @extend .full;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  a {
+    color: white
+  }
+}
+
+.main-container {
+  width: 100%;
+  padding: 0px;
+  background-color: white;
+}
+
+.body-container {
+  width: auto;
+  max-width: 1024px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.blog-container {
+  width: auto;
+  max-width: 750px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 1.5;
+  font-size: medium;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+/* TOC */
+.affix {
+  top: 60px;
+}
+
+.nav>.active:focus>a, nav[data-toggle=toc] .nav>.active:hover>a, nav[data-toggle=toc] .nav>.active>a {
+    color: #124266;
+    border-left: 2px solid #124266;
+}
+
+/* Guideline thumbnails*/
+.thumbnail {
+  @extend .full;
+  border: 0px;
+  .caption {
+    color: white;
+  }
+}
+
+/* Company logos size */
+.company-logo {
+  max-width: 100%;
+  height: auto;
+  padding: 10px
+}
+
+/* links */
+a {
+  color: #124266
+}
+
+/* navbar */
+.navbar {
+
+  a {
+    color: white
+  }
+
+  a.page-link:hover {
+    color: #124266
+  }
+
+  .navbar-header {
+    color: white;
+  }
+}
+
+/* categories */
+.panel-heading {
+  @extend .full;
+  h2 {
+    color: white
+  }
+}
+
+/* headers */
+.full-jumbotron .jumbotron {
+  background: transparent;
+  width: 100%;
+  color: white;
+}
+
+h1 .small {
+  color: white;
+}
+
+.full-jumbotron {
+  @extend .full;
+  width:100%;
+  height:100%;
+  max-width:100%;
+  padding: 0px;
+  background-position:center;
+  background-size:cover;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 400px;
+  margin-bottom: 0px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  position: absolute;
+  top: 30%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  // @extend .full;
+  height: 400px;
+  // background-color: #777;
+}
+.carousel-inner > .item > img {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
+
+.btn-default {
+  background: transparent;
+  color: white;
+  border-width: 5px;
+  border-color: white;
+}
+
+.btn-default:hover {
+  background: white;
+  color: #124266;
+  border-width: 5px;
+  border-color: white;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.social {
+  z-index: 10;
+  background: transparent;
+  color: white;
+  text-align: center;
+  a {
+    color: white;
+  }
+  a:hover {
+   color: white; 
+  }
+}

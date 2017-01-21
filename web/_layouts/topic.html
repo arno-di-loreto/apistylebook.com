@@ -1,0 +1,33 @@
+---
+layout: default
+anchors: true
+---
+<div class="container main-container full-jumbotron">
+  <div class="jumbotron">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.topic_description | markdownify }}</p>
+  </div>
+</div>
+
+<div class="container body-container">
+    {% assign items = (page.guidelines |  sort: "guideline_company") %}
+    {% for item in items %}
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h2 class="panel-title anchored"><a href="{{ item.guideline__links.self.href | prepend: site.baseurl | prepend: site.github.url}}">{{item.guideline_company}} - {{item.guideline_title}}</a></h2>
+        </div>
+        <table class="table">
+          {% for reference in item.references %}
+            <tr><td>
+              <a target="document" href="{{ reference.url }}">{{reference.name}}</a>
+              {% if reference.quote%}
+                <blockquote>
+                {{reference.quote}}
+                </blockquote>
+              {% endif %}
+            </td></tr>
+          {% endfor %}
+        </table>
+      </div>
+    {% endfor %}
+</div>

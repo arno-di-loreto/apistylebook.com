@@ -1,0 +1,30 @@
+<header>
+  <!-- Static navbar -->
+  <nav class="navbar navbar-fixed-top full">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand" href="{{ site.baseurl | prepend: site.github.url}}/">{{ site.title | escape }}</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          {% assign menu_pages = (site.pages | where: 'menu', 'true' | sort: 'sort') %}
+          {% for my_page in menu_pages %}
+            <li 
+              {% if my_page.url == page.url%}
+              class="nav-item active"
+              {% else %}
+              class="nav-item"
+              {% endif %}
+            >
+              <a class="page-link" href="{{ my_page.url | prepend: site.baseurl | prepend: site.github.url }}">{{ my_page.title | escape }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+</header>

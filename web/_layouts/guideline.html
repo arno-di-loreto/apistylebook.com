@@ -1,0 +1,59 @@
+---
+layout: default
+anchors: true
+---
+<div class="container main-container full-jumbotron">
+    <div class="jumbotron">
+        <h1>{{ page.title | escape }}</h1>
+        <p>{{page.guideline_company}}</p>
+    </div>
+</div>
+<div class="container body-container">
+  <div class="col-sm-3">
+    <div class="row" id="company-logo">
+      <a href="{{page.guideline_companyUrl}}" target="company"><img class="company-logo" src="{{page.guideline_companyLogoUrl | prepend:site.baseurl | prepend: site.github.url}}"></a>
+    </div>
+    <div class="row">
+      <nav id="toc" data-toggle="toc" class="affix"></nav>
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <div class="row">
+      {% assign items = (page.topics |  sort: "topic_category" | group_by: "topic_category") %}
+      {% for category in items %}
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title anchored">{{category.name}}</h2>
+          </div>
+          <table class="table">
+            {% for topic in category.items %}
+            <tr><td>
+            <h3 class="anchored"><a href="{{ topic.topic__links.self.href | prepend: site.baseurl | prepend: site.github.url}}">{{ topic.topic_name | escape }}</a></h3>
+            <p>{{ topic.topic_description | markdownify }}</p>
+            <ul class="list-group">
+            {% for reference in topic.references %}
+              <li class="list-group-item">
+              <a href="{{ reference.url }}" target="specification">{{reference.name}}</a>
+              {% if reference.quote%}
+                <blockquote>
+                {{reference.quote}}
+                </blockquote>
+              {% endif %}
+              </li>
+            {% endfor %}
+            </ul>
+            </td></tr>
+          {% endfor %}
+          </table>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    var bottom = $("#company-logo").offset().top + $("#company-logo").outerHeight(true);
+    $('#toc').affix({offset: {top: bottom }});
+});
+</script>

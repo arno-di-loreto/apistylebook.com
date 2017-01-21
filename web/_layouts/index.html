@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="full" data-spy="scroll" data-target="#toc">
+    {% include header.html %}
+    <div class="row">
+      <div class="container main-container">
+        {{ content }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 social">
+          <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+      </div>
+    </div>
+        
+  </body>
+
+</html>

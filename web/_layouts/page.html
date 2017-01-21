@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="container main-container full-jumbotron">
+    <div class="jumbotron">
+        <h1>{% if page.longtitle %}{{ page.longtitle | escape }}{% else %}{{ page.title | escape }}{% endif %}</h1>
+        {% if page.subtitle %}
+          <p>
+          {{ page.subtitle }}
+          </p>
+        {% endif %}
+    </div>
+</div>
+
+<div class="container body-container">
+{{ content }}
+</div>

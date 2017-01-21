@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body  class="full" data-spy="scroll" data-target="#toc">
+
+    {% include header.html %}
+    <div class="container main-container">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+    {% if page.anchors or layout.anchors %}
+    <script src="{{ "/js/anchor.min.js" | prepend: site.baseurl | prepend: site.github.url }}" ></script>
+    <script language="javascript"> 
+      anchors.options = {
+        placement: 'right'
+      };
+      anchors.add('.anchored');
+    </script>
+    {% endif %}
+    
+  </body>
+
+</html>

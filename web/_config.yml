@@ -1,0 +1,42 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: API Stylebook
+description: > # this means to ignore newlines until "baseurl:"
+  Collections of resources for API Designers
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://apistylebook.com" # the base hostname & protocol for your site
+twitter_username: apistylebook
+github_username:  arno-di-loreto
+#github:
+#  url: ""
+
+# Third party parameters
+google_analytics: UA-83952820-1
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+include: ["_pages"]
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  # to avoid Invalid date '<%= Time.now.strftime('%Y-%m-%d %H:%M:%S %z') %>': Document 'vendor/cache/gems/jekyll-3.2.1/lib/site_template/_posts/0000-00-00-welcome-to-jekyll.markdown.erb' does not have a valid date in the YAML front matter.
+  # See https://github.com/jekyll/jekyll/issues/5267  
+  - vendor

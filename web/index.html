@@ -1,0 +1,96 @@
+---
+layout: index
+---
+
+<!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide full" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>
+                <span class="glyphicon glyphicon-book" aria-hidden="true"></span><br><br>
+                API Stylebook
+              </h1>
+              <br>
+              <p>Collections Of Resources For API Designers.</p> 
+              <br>
+              <p><a class="btn btn-lg btn-default" href="{{ "/about" | prepend: site.baseurl | prepend: site.github.url }}" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>
+                <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span><br>
+                API<br>Design Guidelines
+              </h1>
+              <br>
+              <p>Publicly available API design guidelines are analyzed to list covered topics and their references within each one.</p>
+              <br>
+              <p><a class="btn btn-lg btn-default" href="{{ "/design/guidelines/" | prepend: site.baseurl | prepend: site.github.url }}" role="button">Browse Guidelines</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>
+                <span class="glyphicon glyphicon-tags" aria-hidden="true"></span><br>
+                API<br>Design Topics
+              </h1>
+              <br>
+              <p>All references to a specific topic throughout all analyzed guidelines are easily accessible.</p>
+              <br>
+              <p><a class="btn btn-lg btn-default" href="{{ "/design/topics/" | prepend: site.baseurl | prepend: site.github.url }}" role="button">Browse Topics</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>
+                <span class="glyphicon glyphicon-tag" aria-hidden="true"></span><br>
+                Not sure how to provide information on error?
+              </h1>
+              <br>
+              <p>Browse each topic and be inspired by references from different guidelines.</p>
+              <br>
+              <p><a class="btn btn-lg btn-default" href="{{ "/design/topics/http-status-standard-error" | prepend: site.baseurl | prepend: site.github.url }}" role="button">Browse Error Format Topic</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>
+                <span class="glyphicon glyphicon-file" aria-hidden="true"></span><br>
+                Which topics are covered by Microsoft API Guidelines?
+              </h1>
+              <br>
+              <p>Design Guidelines cover different topics in different ways, get easy access to all references on each one.</p>
+              <br>
+              <p><a class="btn btn-lg btn-default" href="{{ "/design/guidelines/microsoft-rest-api-guidelines" | prepend: site.baseurl | prepend: site.github.url }}" role="button">Browse Microsoft Guidelines</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->

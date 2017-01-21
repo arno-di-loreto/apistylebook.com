@@ -1,0 +1,32 @@
+{
+  "name": "apistylebook-api-builder",
+  "version": "1.0.0",
+  "description": "build md files for apistylebook.com and yaml and json files for api.apistylebook.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover --print both _mocha -- -R spec",
+    "clean": "rm -rf dist",
+    "build-api-web": "node index.js",
+    "add-screenshot-to-build":"cp -r ../data/media dist/api;cp -r ../data/media dist/web",
+    "default": "npm run clean;npm run build-api-web;npm run add-screenshot-to-build",
+    "copy-screenshots": "rm -rf ../data/media/screenshots;mkdir -p ../data/media/screenshots;cp dist/media/screenshots/* ../data/media/screenshots",
+    "build-screenshots": "mkdir -p dist/media;node lib/guidelines-media.js",
+    "update-screenshots": "npm run clean;npm run build-screenshots;npm run copy-screenshots"
+  },
+  "author": "Arnaud Lauret",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^3.0.2",
+    "mock-fs": "^3.11.0"
+  },
+  "dependencies": {
+    "async": "^2.0.1",
+    "clone": "^1.0.2",
+    "js-yaml": "^3.6.1",
+    "mkdirp": "^0.5.1",
+    "webshot": "^0.18.0"
+  }
+}
