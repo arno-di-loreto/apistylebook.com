@@ -11,7 +11,15 @@ else
 fi
 
 function main {
+  clean
 	build
+}
+
+function clean {
+  rm -rf api/media
+  rm -rf api/design
+  rm -rf web/media
+  rm -rf web/design
 }
 
 function build { 
@@ -22,6 +30,7 @@ function build {
   echo "building json and md in $CURRENT_PATH"
   npm run default
   cd ..
+  cp -r builder/dist/api/* api/
   cp -r builder/dist/web/* web/
   cd web
   CURRENT_PATH=`pwd`

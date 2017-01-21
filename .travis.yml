@@ -13,6 +13,8 @@ env:
   global:
     - DEPLOY_REPO_WEB=https://github.com/arno-di-loreto/apistylebook-web.git
     - DEPLOY_BRANCH_WEB=gh-pages
+    - DEPLOY_REPO_API=https://github.com/arno-di-loreto/apistylebook-api.git
+    - DEPLOY_BRANCH_API=gh-pages
     - JEKYLL_ENV=production
 
 before_install:
