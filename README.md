@@ -15,15 +15,37 @@ The API Stylebook aims to help API Designers to solve API design matters and bui
 
 You can contribute to the API Stylebook by sending PRs.
 
-## Add a new styleguide
+## Add a new styleguide 
+To add a new styleguide, you need to create a new guideline file `some-company-new-guidelines-id.yaml` in `data/guidelines`.
 
-### Create a 
+```YAML
+id: some-company-new-guidelines-id
+title: New Guidelines
+type: website
+url: https://developer.somecompany.com/docs/guidelines/
+company: Some Company
+companyLogoUrl: /media/logos/some-company.png
+companyUrl: https://developer.somecompany.com/
+screenshotUrl: /media/screenshots/some-company-new-guidelines-id.png
+date: 2016-01-22
+reviewDate: 2016-09-01
 
-## Fix an issue in existing data
+topics:
+  some-topic:
+    - name: Some Section Name
+      url: https://developer.somecompany.com/docs/guidelines/#some-section-name
+      quote: A quote to find easily the topic in the section 
+```
 
-## Fix a typo on the Jenkins website 
+### Add a new topic
+To add a new topic which was not already covered by an existing guideline, you need to add it to the `data/design/guidelines/topics.yaml` file.
 
-# Publishing process
+```YAML
+some-topic:
+  category: Some Category
+  name: Some Topic
+  description: A description of this topic
+```
 
 # Tools used
 
