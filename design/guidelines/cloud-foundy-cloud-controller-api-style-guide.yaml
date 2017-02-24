@@ -14,7 +14,7 @@ topics:
       url: https://github.com/cloudfoundry/cc-api-v3-style-guide#resources
     - name: Links
       url: https://github.com/cloudfoundry/cc-api-v3-style-guide#links
-    - name: Includind Related Resources
+    - name: Including Related Resources
       url: https://github.com/cloudfoundry/cc-api-v3-style-guide#including-related-resources
   hypermedia-read:
     - name: Resources
@@ -117,7 +117,7 @@ topics:
     - name: Nested Resources
       url: https://github.com/cloudfoundry/cc-api-v3-style-guide#nested-resources
   resource-retrieve-dereference:
-    - name: Includind Related Resources
+    - name: Including Related Resources
       url: https://github.com/cloudfoundry/cc-api-v3-style-guide#including-related-resources
   resource-creation:
     - name: POST
