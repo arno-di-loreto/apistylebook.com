@@ -1,0 +1,276 @@
+id: google-api-design-guide
+title: Google API Design Guide
+type: website
+url: https://cloud.google.com/apis/design/
+company: Google
+companyLogoUrl: /media/logos/google.png
+companyUrl: https://cloud.google.com/
+screenshotUrl: /media/screenshots/google-api-design-guide.png
+date: 2017-02-21
+reviewDate: 2017-03-04
+
+topics:
+  asynchronicity:
+    - name: Delete
+      url: https://cloud.google.com/apis/design/standard_methods#delete
+      quote: If the Delete method initiates a long-running operation, it should return the long-running operation.
+    - name: Common Custom Methods
+      url: https://cloud.google.com/apis/design/custom_methods#common_custom_methods
+      quote: Cancel an outstanding operation (build, computation etc.)
+    - name: Long Running Operation
+      url: https://cloud.google.com/apis/design/design_patterns#long_running_operations
+  collection-filtering:
+    - name: List filter field
+      url: https://cloud.google.com/apis/design/naming_convention#list_filter_field
+    - name: Common Custom Methods
+      url: https://cloud.google.com/apis/design/custom_methods#common_custom_methods
+      quote: (:search) Alternative to List for fetching data that does not adhere to List semantics. 
+    - name: List Sub-Collections
+      url: https://cloud.google.com/apis/design/design_patterns#list_sub-collections
+      quote: Sometimes, an API needs to let a client List/Search across sub- collections.
+    - name: Get Unique Resource From Sub-Collection
+      url: https://cloud.google.com/apis/design/design_patterns#get_unique_resource_from_sub-collection
+      quote: it may be useful to allow a Get to retrieve that resource without knowing which parent collection contains it
+  collection-pagination:
+    - name: List Pagination
+      url: https://cloud.google.com/apis/design/design_patterns#list_pagination
+  collection-retrieve:
+    - name: Standard Methods
+      url: https://cloud.google.com/apis/design/standard_methods
+    - name: List
+      url: https://cloud.google.com/apis/design/standard_methods#list
+      quote: The List method takes a collection name and zero or more parameters as input, and returns a list of resources that match the input
+  collection-sorting:
+    - name: Sorting Order
+      url: https://cloud.google.com/apis/design/design_patterns#sorting_order
+  collection:
+    - name: Resources
+      url: https://cloud.google.com/apis/design/resources#resources
+      quote: A collection contains a list of resources of the same type. For example, a user has a collection of contacts.
+    - name: Methods
+      url: https://cloud.google.com/apis/design/resources#methods
+      quote: The key characteristic of a resource-oriented API is that it emphasizes resources (data model) over the methods performed on the resources (functionality)
+    - name: Resources examples
+      url: https://cloud.google.com/apis/design/resources#examples
+    - name: Collection ID
+      url: https://cloud.google.com/apis/design/resource_names#collection_id
+  data-format-date-time:
+    - name: Time and Duration
+      url: https://cloud.google.com/apis/design/naming_convention#time_and_duration
+    - name: Date and Time of the Day
+      url: https://cloud.google.com/apis/design/naming_convention#date_and_time_of_day
+  data-format:
+    - name: Grammar Syntax
+      url: https://cloud.google.com/apis/design/design_patterns#grammar_syntax
+    - name: Integer Types
+      url: https://cloud.google.com/apis/design/design_patterns#integer_types
+  developer-experience:
+    - name: Grammar Syntax
+      url: https://cloud.google.com/apis/design/design_patterns#grammar_syntax
+      quote: To provide a consistent developer experience across APIs and reduce learning curve, API designers must use the ISO 14977 Extended Backus-Naur Form (EBNF) syntax to define such grammars
+  documentation:
+    - name: Grammar Syntax
+      url: https://cloud.google.com/apis/design/design_patterns#grammar_syntax
+      quote: To provide a consistent developer experience across APIs and reduce learning curve, API designers must use the ISO 14977 Extended Backus-Naur Form (EBNF) syntax to define such grammars
+    - name: Output Fields
+      url: https://cloud.google.com/apis/design/design_patterns#output_fields
+      quote: For fields that are output only, the field attribute shall be documented.
+    - name: Documentation
+      url: https://cloud.google.com/apis/design/documentation
+      quote: This section provides guidelines for adding inline documentation to your API. Most APIs will also have overviews, tutorials, and higher-level reference documentation, which are outside the scope of this Design Guide. 
+    - name: Checklist for all descriptions
+      url: https://cloud.google.com/apis/design/documentation#checklist_for_all_descriptions
+      quote: In most cases, there's more to say than just restating the obvious
+  global-design:
+    - name: Resource Oriented Design
+      url: https://cloud.google.com/apis/design/resources
+      quote: This Design Guide explains how to apply REST principles to API designs independent of programming language, operating system, or network protocol. It is NOT a guide solely to creating REST APIs.
+    - name: What is a REST API?
+      url: https://cloud.google.com/apis/design/resources#what_is_a_rest_api
+    - name: Design flow
+      url: https://cloud.google.com/apis/design/resources#design_flow
+      quote: The Design Guide suggests taking the following steps when designing resource- oriented APIs
+    - name: Design Patterns
+      url: https://cloud.google.com/apis/design/design_patterns
+  guiding-input:
+    - name: Request Validation
+      url: https://cloud.google.com/apis/design/design_patterns#request_validation
+      quote: If this field is set to true, the server must not execute any side effects and only perform implementation-specific validation consistent with the full request.
+    - name: Request Duplication
+      url: https://cloud.google.com/apis/design/design_patterns#request_duplication
+      quote: some API methods cannot easily be idempotent, such as creating a resource, and there is a need to avoid unnecessary duplication
+    - name: Grammar Syntax
+      url: https://cloud.google.com/apis/design/design_patterns#grammar_syntax
+    - name: Output Fields
+      url: https://cloud.google.com/apis/design/design_patterns#output_fields
+      quote: This means that the server must ignore the presence of output only fields and any indication of it. 
+  http-caching:
+    - name: ETags
+      url: https://cloud.google.com/apis/design/design_patterns#etags
+  http-content-negotiation:
+    - name: Protocol Buffers v3
+      url: https://cloud.google.com/apis/design/proto3
+      quote: It supports both binary and text wire formats, and works with many different wire protocols on different platforms.
+  http-methods-delete:
+    - name: Standard Methods
+      url: https://cloud.google.com/apis/design/standard_methods
+    - name: Delete
+      url: https://cloud.google.com/apis/design/standard_methods#delete
+  http-methods-get:
+    - name: Standard Methods
+      url: https://cloud.google.com/apis/design/standard_methods
+    - name: List
+      url: https://cloud.google.com/apis/design/standard_methods#list
+      quote: The List method must use an HTTP GET verb.
+    - name: Get
+      url: https://cloud.google.com/apis/design/standard_methods#get
+  http-methods-patch:
+    - name: Standard Methods
+      url: https://cloud.google.com/apis/design/standard_methods
+    - name: Update
+      url: https://cloud.google.com/apis/design/standard_methods#update
+      quote: The standard Update method should support partial resource update, and use HTTP verb PATCH
+  http-methods-post:
+    - name: Standard Methods
+      url: https://cloud.google.com/apis/design/standard_methods
+    - name: Create
+      url: https://cloud.google.com/apis/design/standard_methods#create
+  http-methods-put:
+    - name: Standard Methods
+      url: https://cloud.google.com/apis/design/standard_methods
+    - name: Update
+      url: https://cloud.google.com/apis/design/standard_methods#update
+      quote: If the Update method only supports full resource update, it must use HTTP verb PUT
+  http-methods:
+    - name: Resource Oriented Design
+      url: https://cloud.google.com/apis/design/resources
+      quote: With the HTTP protocol, the resource names naturally map to URLs, and methods naturally map to HTTP methods POST, GET, PUT, PATCH, and DELETE.
+    - name: Standard Methods
+      url: https://cloud.google.com/apis/design/standard_methods
+    - name: HTTP Verbs
+      url: https://cloud.google.com/apis/design/http_verbs
+  naming-language:
+    - name: Collection ID
+      url: https://cloud.google.com/apis/design/resource_names#collection_id
+      quote: Must use clear and concise English terms.
+    - name: Naming Conventions
+      url: https://cloud.google.com/apis/design/naming_convention
+      quote: Names used in APIs should be in correct American English.
+  naming-case:
+    - name: Collection ID
+      url: https://cloud.google.com/apis/design/resource_names#collection_id
+      quote: Must be in plural form with lowerCamel case
+    - name: Camel Case
+      url: https://cloud.google.com/apis/design/naming_convention#camel_case
+  naming:
+    - name: Collection ID
+      url: https://cloud.google.com/apis/design/resource_names#collection_id
+      quote: Must be in plural form
+    - name: Standard Fields
+      url: https://cloud.google.com/apis/design/standard_fields
+      quote: This section describes a set of standard message field definitions that should be used when similar concepts are needed. This will ensure the same concept has the same name and semantics across different APIs.
+    - name: Naming Conventions
+      url: https://cloud.google.com/apis/design/naming_convention
+    - name: Representing Ranges
+      url: https://cloud.google.com/apis/design/design_patterns#representing_ranges
+    - name: List Paginations
+      url: https://cloud.google.com/apis/design/design_patterns#list_pagination
+  resource-action:
+    - name: Custom Methods
+      url: https://cloud.google.com/apis/design/custom_methods
+  resource-creation-with-id:
+    - name: Update
+      url: https://cloud.google.com/apis/design/standard_methods#update
+      quote: If the API accepts client-assigned resource names, the server may allow the client to specify a non-existent resource name and create a new resource.
+  resource-creation:
+    - name: Standard Methods
+      url: https://cloud.google.com/apis/design/standard_methods
+    - name: Create
+      url: https://cloud.google.com/apis/design/standard_methods#create
+  resource-deletion:
+    - name: Standard Methods
+      url: https://cloud.google.com/apis/design/standard_methods
+    - name: Delete
+      url: https://cloud.google.com/apis/design/standard_methods#delete
+  resource-id:
+    - name: Resource ID
+      url: https://cloud.google.com/apis/design/resource_names#resource_id
+  resource-multiple:
+    - name: Batch Get
+      url: https://cloud.google.com/apis/design/standard_methods#list
+      quote: A batch get (such as a method that takes multiple resource ids and returns an object for each of those ids) should be implemented as a custom BatchGet method, rather than a List
+    - name: Common Custom Methods
+      url: https://cloud.google.com/apis/design/custom_methods#common_custom_methods
+      quote: Batch get of multiple resources.
+  resource-replacement:
+    - name: Update
+      url: https://cloud.google.com/apis/design/standard_methods#update
+      quote: If the Update method only supports full resource update, it must use HTTP verb PUT
+  resource-retrieve-partial:
+    - name: Partial Response
+      url: https://cloud.google.com/apis/design/design_patterns#partial_response
+      quote: Sometimes an API client only needs a specific subset of data in the response message. 
+    - name: Resource View
+      url: https://cloud.google.com/apis/design/design_patterns#resource_view
+      quote: To reduce network traffic, it is sometimes useful to allow the client to limit which parts of the resource the server should return in its responses, returning a view of the resource instead of the full resource representation. 
+  resource-retrieve:
+    - name: Standard Methods
+      url: https://cloud.google.com/apis/design/standard_methods
+    - name: Get
+      url: https://cloud.google.com/apis/design/standard_methods#get
+    - name: Get Unique Resource From Sub-Collection
+      url: https://cloud.google.com/apis/design/design_patterns#get_unique_resource_from_sub-collection
+      quote: it may be useful to allow a Get to retrieve that resource without knowing which parent collection contains it
+  resource-state:
+    - name: Use Cases
+      url: https://cloud.google.com/apis/design/custom_methods#use_cases
+      quote: Promote an employee (corpeng) If implemented as a standard update, the client would have to replicate the corporate policies governing the promotion process to ensure the promotion happens to the correct level, within the same career ladder etc.
+  resource-update-partial:
+    - name: Update
+      url: https://cloud.google.com/apis/design/standard_methods#update
+      quote: The standard Update method should support partial resource update, and use HTTP verb PATCH
+  resource-update:
+    - name: Standard Methods
+      url: https://cloud.google.com/apis/design/standard_methods
+    - name: Update
+      url: https://cloud.google.com/apis/design/standard_methods#update
+    - name: Move
+      url: https://cloud.google.com/apis/design/custom_methods#common_custom_methods
+      quote: Move a resource from one parent to another.
+  resource-url-format:
+    - name: Resource Names
+      url: https://cloud.google.com/apis/design/resource_names
+      quote: The resource name is organized hierarchically using collection IDs and resource IDs, separated by forward slashes.
+    - name: Resource Name vs URL
+      url: https://cloud.google.com/apis/design/resource_names#resource_name_vs_url
+  resource:
+    - name: Resources
+      url: https://cloud.google.com/apis/design/resources#resources
+      quote: A resource has some state and zero or more sub-resources. Each sub-resource can be either a simple resource or a collection resource.
+    - name: Methods
+      url: https://cloud.google.com/apis/design/resources#methods
+      quote: The key characteristic of a resource-oriented API is that it emphasizes resources (data model) over the methods performed on the resources (functionality)
+    - name: Resources examples
+      url: https://cloud.google.com/apis/design/resources#examples
+    - name: Resource Labels
+      url: https://cloud.google.com/apis/design/design_patterns#resource_labels
+  undo:
+    - name: Delete
+      url: https://cloud.google.com/apis/design/standard_methods#delete
+      quote: If the Delete method only marks the resource as being deleted, it should return the updated resource.
+    - name: Undelete
+      url: https://cloud.google.com/apis/design/custom_methods#common_custom_methods
+      quote: Restore a resource that was previously deleted. The recommended retention period is 30-day.
+  versioning:
+    - name: List Pagination
+      url: https://cloud.google.com/apis/design/design_patterns#list_pagination
+      quote: Even though adding pagination support to an existing API is purely additive from API surface perspective, it is a behavior-breaking change
+    - name: Versioning
+      url: https://cloud.google.com/apis/design/versioning
+    - name: Compatibility
+      url: https://cloud.google.com/apis/design/compatibility
+      quote: This page provides more detailed explanations for the list of breaking and non-breaking changes given in the Versioning section.
+    - name: Backwards-compatible (non-breaking) changes
+      url: https://cloud.google.com/apis/design/compatibility#backwards-compatible_non-breaking_changes
+    - name: Backwards-incompatible (breaking) changes
+      url: https://cloud.google.com/apis/design/compatibility#backwards-incompatible_breaking_changes

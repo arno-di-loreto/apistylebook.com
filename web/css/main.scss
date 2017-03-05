@@ -22,7 +22,19 @@ body {
   padding-top: 50px;
   /* Margin bottom by footer height */
   // margin-bottom: 40px;
-  color: #124266;
+  color: #021E33;
+}
+
+blockquote {
+  color: #3B698D
+}
+
+a {
+  color: #052F4F
+}
+
+a:hover {
+  color: #3B698D
 }
 
 .footer {
@@ -58,6 +70,11 @@ body {
   padding-bottom: 15px;
   line-height: 1.5;
   font-size: medium;
+
+  img {
+    width: auto;
+    max-width: 720px;
+  }
 }
 
 .container .text-muted {
