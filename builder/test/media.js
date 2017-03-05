@@ -12,14 +12,16 @@ describe('media', function() {
     it('should return default options', function() {
       expect(media._getWebshotOptions()).to.be.eql({
         screenSize: {width: 1280, height: 800},
-        shotSize: {width: 1280, height: 800}
+        shotSize: {width: 1280, height: 800},
+        defaultWhiteBackground: true
       });
     });
 
     it('should return custom options', function() {
       expect(media._getWebshotOptions(123, 456)).to.be.eql({
         screenSize: {width: 123, height: 456},
-        shotSize: {width: 123, height: 456}
+        shotSize: {width: 123, height: 456},
+        defaultWhiteBackground: true
       });
     });
   });

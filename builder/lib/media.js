@@ -31,7 +31,8 @@ function getWebshotOptions(width, height) {
     shotSize: {
       width: width,
       height: height
-    }
+    },
+    defaultWhiteBackground: true
   };
   return options;
 }
