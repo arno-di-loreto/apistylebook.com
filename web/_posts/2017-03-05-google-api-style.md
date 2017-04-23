@@ -23,6 +23,6 @@ The [documentation section](/design/guidelines/google-api-design-guide#documenta
 
 > In most cases, there's more to say than just restating the obvious
 
-Versioning and how to determine if a change is a breaking one or not are very well explained (see [Versionning](http://localhost:4000/design/guidelines/google-api-design-guide#versioning)).
+Versioning and how to determine if a change is a breaking one or not are very well explained (see [Versionning](/design/guidelines/google-api-design-guide#versioning)).
 
 To have a quick look at all the topics covered by the [Google API Design Guide, click here.](/design/guidelines/google-api-design-guide).
