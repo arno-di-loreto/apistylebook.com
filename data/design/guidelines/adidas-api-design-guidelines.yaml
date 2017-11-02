@@ -1,0 +1,182 @@
+id: adidas-api-design-guidelines
+title: adidas API design guidelines
+type: website
+url: https://adidas-group.gitbooks.io/api-guidelines/content/
+company: adidas
+companyLogoUrl: /media/logos/adidas.svg
+companyUrl: https://developer.atlassian.com/
+screenshotUrl: /media/screenshots/adidas-api-design-guidelines.png
+date: 2017-07-11
+reviewDate: 2017-11-02
+
+topics:
+  api-counts:
+    - name: Minimal API surface
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/minimal-api-surface.html
+  asynchronicity:
+    - name: Asynchronous Tasks
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/asynchronous-tasks.html  
+  collection-filtering:
+    - name: Search Requests
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/search-requests.html
+  collection-pagination:
+    - name: Pagination
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/pagination.html 
+  cors:
+    - name: Security
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/security.html
+  data-standards:
+    - name: Common Data Types
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/application/common-data-types.html
+      quote: data, time, interval, duration, timestamps, language, country code, currency
+  data-format-date-time:
+    - name: Common Data Types
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/application/common-data-types.html
+      quote: data, time, interval, duration, timestamps
+  data-format:
+    - name: Corporate Data Model
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/application/harmonize-data.html
+  data-internationalization:
+    - name: Common Data Types
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/application/common-data-types.html
+      quote: language, country code, currency
+    - name: Localization
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/localization.html
+  documentation:
+    - name: OpenAPI Specification
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/openapi-specification.html
+    - name: API Design Platform - Apiary
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/apiary.html
+  errors:
+    - name: Problem Detail
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/message/error-reporting.html
+      quote: application/problem+json
+    - name: Error Response Format
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/message/message-formats.html
+      quote: application/problem+json
+  global-design:
+    - name: Core principles
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/
+    - name: API First
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/api-first.html
+    - name: Contract
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/contract.html
+    - name: Design Maturity
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/design-maturity.html 
+    - name: Robustness
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/robustness.html
+    - name: Loose Coupling
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/clients/loose-coupling.html     
+  governance:
+    - name: Version Control System
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/version-control-system.html
+    - name: OpenAPI Specification
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/openapi-specification.html
+    - name: API Design Platform - Apiary
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/apiary.html
+    - name: Testing
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/testing.html
+    - name: Rules For Extending
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/rules-for-extending.html
+  http-caching:
+    - name: Caching
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/caching.html
+  http-content-negotiation:
+    - name: Content Negociation
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/message/content-negotiation.html
+  http-status-200:
+    - name: Asynchronous Tasks
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/asynchronous-tasks.html
+    - name: Security
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/security.html
+  http-status-303:
+    - name: Asynchronous Tasks
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/asynchronous-tasks.html
+  http-status-400:
+    - name: Security
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/security.html
+  http-status-401:
+    - name: Security
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/security.html
+  http-status-403:
+    - name: Security
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/security.html
+  http-status-404:
+    - name: Security
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/security.html
+  http-status-405:
+    - name: Security
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/security.html
+  http-status-429:
+    - name: Security
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/security.html 
+  http-status-standard-error:
+    - name: Error Response Format
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/message/message-formats.html
+      quote: application/problem+json
+  http-headers:
+    - name: Naming Conventions
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/evolution/naming-conventions.html
+      quote: Every HTTP Header should use Hyphenated-Pascal-Case. A custom HTTP Header SHOULD NOT start with X- (RFC6648).
+  http-status:
+    - name: Status Codes
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/protocol/use-appropriate-status-codes.html
+    - name: Security
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/security.html 
+  http-methods-alternative:
+    - name: Query Requests with Large Inputs
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/query-requests-with-large-inputs.html
+  http-methods-post:
+    - name: Query Requests with Large Inputs
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/query-requests-with-large-inputs.html
+  http-methods:
+    - name: Request Methods
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/protocol/use-appropriate-methods.html
+  http:
+    - name: HTTP
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/protocol/http.html
+  hypermedia:
+    - name: HAL
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/message/hal.html
+    - name: Foreign Key Relations
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/message/foreign-key-relations.html
+  naming-case:
+    - name: Naming Conventions
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/evolution/naming-conventions.html
+    - name: JSON
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/evolution/json.html
+  naming:
+    - name: Naming Conventions
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/evolution/naming-conventions.html
+    - name: Reserved Identifiers
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/evolution/reserved-identifiers.html
+  rate-limiting:
+    - name: Rate Limiting
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/rate-limiting.html
+  resource-multiple:
+    - name: 
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/batch-operations.html
+  resource-relationships:
+    - name: Foreign Key Relations
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/message/foreign-key-relations.html
+  resource-retrieve-dereference:
+    - name: Choosing Fields & Embedded Resources
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/choosing-fields-and-embedded-resoruces.html
+  resource-retrieve-partial:
+    - name: Choosing Fields & Embedded Resources
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/choosing-fields-and-embedded-resoruces.html
+  resource-url-format:
+    - name: URI structure
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/evolution/uri-structure.html
+    - name: Changes and Versioning
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/evolution/versioning.html
+  security:
+    - name: TLS
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/protocol/tls.html
+    - name: Security
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/execution/security.html
+  versioning:
+    - name: Changes and Versioning
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/evolution/versioning.html
+    - name: Rules For Extending
+      url: https://adidas-group.gitbooks.io/api-guidelines/content/core-principles/rules-for-extending.html
