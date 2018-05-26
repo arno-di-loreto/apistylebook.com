@@ -8,7 +8,7 @@
     "coverage": "istanbul cover --print both _mocha -- -R spec",
     "clean": "rm -rf dist",
     "build-api-web": "node index.js",
-    "add-screenshot-to-build":"cp -r ../data/media dist/api;cp -r ../data/media dist/web",
+    "add-screenshot-to-build": "cp -r ../data/media dist/api;cp -r ../data/media dist/web",
     "default": "npm run clean;npm run build-api-web;npm run add-screenshot-to-build",
     "copy-screenshots": "rm -rf ../data/media/screenshots;mkdir -p ../data/media/screenshots;cp dist/media/screenshots/* ../data/media/screenshots",
     "build-screenshots": "mkdir -p dist/media;node lib/guidelines-media.js",
