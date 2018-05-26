@@ -58,3 +58,7 @@ Here's the list of tools used:
 - [Jekyll](https://jekyllrb.com/) to build the static website apistylebook.com
 - [Github Page](https://pages.github.com/) to host apistylebook.com and api.apistylebook.com
 - [Travis CI](https://travis-ci.org/) to build and deploy apistylebook.com and api.apistylebook.com
+
+# About Google Analytics
+
+This website used Google Analytics with anomized IP and disabled cookies thanks to this post: https://medium.com/jaysquared-com/implement-google-analytics-without-cookies-to-comply-with-gdpr-eu-cookie-law-and-eprivacy-a345c0fe89d7
