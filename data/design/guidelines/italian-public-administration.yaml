@@ -1,0 +1,238 @@
+id: italian-public-administration
+title: Interoperability model for the Public Administration
+type: website
+url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/
+company: Agenzia per l'Italia Digital & Team per la trasformazione digital (Italian administration)
+companyLogoUrl: /media/logos/italianadministration.png
+companyUrl: https://teamdigitale.governo.it/
+screenshotUrl: /media/screenshots/agid-interoperability-model.png
+date: 2017-07-20
+language: italian
+
+topics:
+  asynchronicity:
+    - name: Message broker
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_05.html#message-broker
+    - name: Non blocking profile
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/profili-non-bloccanti.html#profili-non-bloccanti
+      quote: In the following chapter the non-blocking interaction profiles will be shown, in which a user submits a request and this is only taken in charge immediately, while its satisfaction can take place in a deferred manner.
+    - name: Non-blocking RPC PUSH profiles (callback based)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/profili-non-bloccanti.html#profili-non-bloccante-rpc-push-basato-su-callback
+      quote: This particular case, called RPC PUSH, can be used if the user in turn has the possibility to expose a service interface for receiving replies.
+    - name: Non-blocking profile RPC PULL (busy waiting)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/profili-non-bloccanti.html#profilo-non-bloccante-rpc-pull-busy-waiting
+      quote: the provider provides a searchable address to verify the processing status of a request
+  global-design:
+    - name: Introduction to service interfaces
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_01.html
+      quote: A service therefore consists of an activity, or a series of activities, of a more or less intangible nature, which take place in an exchange between a supplier and a customer, in which the object of the transaction is an intangible asset.
+    - name: Paradigms of cooperation
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_01_cap_05.html#paradigmi-di-cooperazione
+      quote: Data sharing, Inter public administration notification, inter public administration composition
+    - name: SOAP
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_03.html#soap
+    - name: REST
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_04.html#rest
+    - name: Message broker
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_05.html#message-broker
+    - name: Comparative considerations (REST vs SOAP vs Message broket)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_06.html#considerazioni-comparative
+    - name: Other approches (Distributed data stores, open data)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_07.html#altri-approcci-e-tecnologie-di-integrazione
+    - name: Paradigms for the design of service interfaces (RPC-like vs resource oriented)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_03_cap_01.html#paradigmi-per-la-progettazione-delle-interfacce-di-servizio
+    - name: Perimeter of service interfaces
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_03_cap_01.html#perimetro-delle-interfacce-di-servizio
+      quote: So each application server offers service interfaces, however it is still significant to distinguish whether the service interface is offered to interoperate within the domain..., towards other administrations or other subjects with whom a relationship of trust is established ... or externally....
+    - name: Technical recommendations for REST
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#raccomandazioni-tecniche-per-rest
+    - name: Technical recommendations for SOAP
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#raccomandazioni-tecniche-per-soap
+    - name: The european context
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_01_cap_02.html#il-contesto-europeo
+      quote: The European Interoperability Framework (EIF) provides guidance to European public administrations on how to operate initiatives related to the issue of interoperability;
+  collection:
+    - name: Resource collections can use plural names
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#le-collezioni-di-risorse-possono-usare-nomi-al-plurale
+    - name: Code structured data with JSON objects
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#codificare-dati-strutturati-con-oggetti-json
+      quote: the payload of a response containing more than one entry returns an object containing a list and not directly a list.
+  data-format:
+    - name: Data uniformity
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_01.html#uniformita-dei-dati
+    - name: Data format (REST)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#formato-dei-dati 
+  data-standards:
+    - name: Use the properties according to standard nomenclatures
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#utilizzare-le-properties-secondo-nomenclature-standard
+  documentation:
+    - name: REST
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_04.html#rest
+      quote: For these reasons the ModI imposes the use of OpenAPI v3. An OpenAPI file allows you to describe the entire interface (available endpoints and operations on each endpoint, input and output parameters for each operation, authentication methods, contact information, license, terms of use, etc.). 
+  errors:
+    - name: Use the Problem JSON scheme for error responses
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#usare-lo-schema-problem-json-per-le-risposte-di-errore
+  governance:
+    - name: Catalog of API/Services
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_01_cap_05.html#catalogo-delle-api-servizi
+    - name: Model governance
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_01_cap_05.html#governance-del-modello
+  http-caching:
+    - name: Directions for use (REST)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_04.html#indicazioni-di-utilizzo
+      quote: Where necessary, especially for caching and concurrent access to resources, ETag (of unique version identifiers of resources) should be leveraged
+    - name: By default, http caching must be disabled
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#di-default-il-caching-http-deve-essere-disabilitato
+  http-content-negotiation:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+    - name: Avoid custom Content-Types
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#evitare-content-type-personalizzati
+  http-methods:
+    - name: Directions for use (REST)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_04.html#indicazioni-di-utilizzo
+      quote: The REST service interface must use the HTTP verb most suitable for the operation as indicated in RFC 7231 
+    - name: Message broker
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_05.html#message-broker
+      quote: Although, depending on the implementations, the different REST service interfaces for accessing message brokers differ in functionality offered and ways of modeling queues, topics / subscriptions, the following behaviors of HTTP methods can be abstracted
+  http-methods-get:
+    - name: Directions for use (REST)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_04.html#indicazioni-di-utilizzo
+      quote: The REST service interface must use the HTTP verb most suitable for the operation as indicated in RFC 7231
+    - name: Message broker
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_05.html#message-broker
+      quote: the GET method is used to consume messages from queues and topics / subscriptions;
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  http-methods-head:
+    - name: Directions for use (REST)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_04.html#indicazioni-di-utilizzo
+      quote: The REST service interface must use the HTTP verb most suitable for the operation as indicated in RFC 7231
+  http-methods-patch:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  http-methods-put:
+    - name: Directions for use (REST)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_04.html#indicazioni-di-utilizzo
+      quote: The REST service interface must use the HTTP verb most suitable for the operation as indicated in RFC 7231
+    - name: Message broker
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_05.html#message-broker
+      quote: The PUT method is usually used to modify the properties of topic / subscriptions and queues.
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  http-methods-post:
+    - name: Directions for use (REST)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_04.html#indicazioni-di-utilizzo
+      quote: The REST service interface must use the HTTP verb most suitable for the operation as indicated in RFC 7231
+    - name: Message broker
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_05.html#message-broker
+      quote: the POST method is used for sending messages and creating topics / subscriptions and queues;
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  http-methods-delete:
+    - name: Directions for use (REST)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_04.html#indicazioni-di-utilizzo
+      quote: The REST service interface must use the HTTP verb most suitable for the operation as indicated in RFC 7231
+    - name: Message broker
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_05.html#message-broker
+      quote: the DELETE method is used for deleting topics / subscriptions and queues and in some cases to signal the fact that a message has been consumed.
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  http-status:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  http-status-200:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  http-status-201:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  http-status-204:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  http-status-404:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  http-status-405:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  http-status-409:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  http-status-415:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  http-status-422:
+    - name: Use the Problem JSON scheme for error responses
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#usare-lo-schema-problem-json-per-le-risposte-di-errore
+      quote: HTTP status 422 if the representation of the request is syntactically correct but semantically non-processable.
+  hypermedia:
+    - name: REST
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_04.html#rest
+      quote: According to this approach, by accessing a resource, the server's response contains hyperlinks to other actions that can be performed on the resource
+    - name: Use absolute URIs in the results
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#usare-uri-assoluti-nei-risultati
+  performance:
+    - name: Optimize bandwidth usage and improve responsiveness
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#ottimizzare-l-uso-della-banda-e-migliorare-la-responsivita
+  naming-case:
+    - name: The properties of JSON objects must have a consistent naming
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#le-proprieta-degli-oggetti-json-devono-avere-un-naming-consistente
+      quote: snake_case camelCase
+  naming:
+    - name: Uniformity and naming (REST)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_04.html#uniformita-e-naming
+    - name: Uniformity and naming (SOAP)
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_03.html#uniformita-e-naming
+    - name: Resource collections can use plural names
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#le-collezioni-di-risorse-possono-usare-nomi-al-plurale
+  resource:
+    - name: The concept of service
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_01.html#il-concetto-di-servizio
+      quote: |
+        We can identify the types of properties, functional property, which expresses "what" we get from service; quality of the service, referring to characteristics (for example, delivery time) that specify benefits or perceived utility associated with the service; non-functional properties, expressing "how" the service is delivered to us.
+    - name: CRUD Access to Resources
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#accesso-crud-a-risorse
+  resource-retrieve-partial:
+    - name: Optimize bandwidth usage and improve responsiveness
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#ottimizzare-l-uso-della-banda-e-migliorare-la-responsivita
+      quote: GET /resources/123?fields=(name,partner(name))
+  resource-retrieve:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  resource-creation:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  resource-update:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  resource-deletion:
+    - name: REST interface processing rules
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/accesso-crud-a-risorse.html#regole-di-processamento
+  security:
+    - name: Security concepts
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_02.html
+      quote: the section focuses on the use of security protocols and techniques based on the manipulation of network messages. The section will also refer to how the security requirements can be variable depending on the application scenario and the use case.
+    - name: Security
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_04_cap_00.html
+      quote: This document describes the security profiles identified by AgID that the providers must use to satisfy the needs expressed through functional and non-functional requirements.
+    - name: Channel security and / or identification of organizations
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_04/sicurezza-di-canale-eo-autenticazione-delle-organizzazioni.html
+    - name: User (consumer) access
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_04/autenticazione-del-soggetto-richiedente.html
+    - name: Integrity of SOAP message
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_04/integrita.html#idas03-integrita-della-payload-del-messaggio-soap
+      quote: This profile extends IDAS01 or IDAS02 , adding to the communication between user and provider at the message level integrity of the message payload.
+    - name: Integrity of REST message
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_04/integrita.html#idar03-integrita-della-payload-messaggio-rest
+      quote: This profile extends IDAR01 or IDAR02 , adding to the communication between user and provider at the message level integrity of the message payload.
+    - name: Confidentiality and user (consumer) authentication
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_04/soluzioni-di-sicurezza.html#soluzione-per-confidenzialita-ed-autenticazione-del-soggetto-fruitore
+    - name: Non repudiation of transactions
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_04/soluzioni-di-sicurezza.html#soluzioni-per-la-non-ripudiabilita-della-trasmissione
+    - name: REST API safety
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_04.html#sicurezza
+      quote: JOSE, JWT
+    - name: SOAP service safety
+      url: https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/doc_02_cap_03.html#sicurezza
+      quote: The Basic Security Profile 1.1, based on the WS-Security extension, suggests the use of SAML 2.0. As mentioned, with respect to authentication and authorization technologies, there are some application domains for which OAuth2 or OpenID are more appropriate. 

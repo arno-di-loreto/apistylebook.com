@@ -24,8 +24,8 @@ sort: 1
                 <div class="caption">
                     <div class="same-height">
                         <h3>{{ page.guideline_title | escape }}</h3>
+                        <p>{{ page.guideline_company | escape }}</p>
                     </div>
-                    <p>{{ page.guideline_company | escape }}</p>
                     <p><a href="{{ page.url | prepend: site.baseurl | prepend: site.github.url}}" class="btn btn-default" role="button">Explore</a></p>
                 </div>
             </div>

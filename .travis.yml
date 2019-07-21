@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - 6
+  - 10
 
 cache: bundler
 
@@ -18,7 +18,7 @@ env:
     - JEKYLL_ENV=production
 
 before_install:
-  - rvm install 2.0.0
+  - rvm install 2.6.3
 install: scripts/install.sh
 script: scripts/build.sh
 
