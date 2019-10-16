@@ -107,11 +107,6 @@ http-status-202:
   name: 202 Accepted
   description: |
     The request has been accepted for processing, but the processing has not been completed. The request might or might not be eventually acted upon, and may be disallowed when processing occurs.
-http-status-203:
-  category: HTTP Status Success
-  name: 203 Non-Authoritative Information
-  description: |
-    The 203 (Non-Authoritative Information) status code indicates that the request was successful but the enclosed payload has been modified from that of the origin server’s 200 (OK) response by a transforming proxy. 
 http-status-204:
   category: HTTP Status Success
   name: 204 No Content
@@ -121,11 +116,6 @@ http-status-206:
   name: 206 Partial Content
   description: |
     The server is delivering only part of the resource (byte serving) due to a range header sent by the client. The range header is used by HTTP clients to enable resuming of interrupted downloads, or split a download into multiple simultaneous streams.
-http-status-300:
-  category: HTTP Status Redirection
-  name: 300 Multiple Choices
-  description: |
-    The 300 (Multiple Choices) status code indicates that the target resource has more than one representation, each with its own more specific identifier, and information about the alternatives is being provided so that the user (or user agent) can select a preferred representation by redirecting its request to one or more of those identifiers. In other words, the server desires that the user agent engage in reactive negotiation to select the most appropriate representation(s) for its needs.
 http-status-301:
   category: HTTP Status Redirection
   name: 301 Moved Permanently
@@ -145,16 +135,6 @@ http-status-304:
   name: 304 Not Modified
   description: |
     Indicates that the resource has not been modified since the version specified by the request headers If-Modified-Since or If-None-Match. In such case, there is no need to retransmit the resource since the client still has a previously-downloaded copy.
-http-status-307:
-  category: HTTP Status Redirection
-  name: 307 Temporary Redirect
-  description: |
-    The 307 (Temporary Redirect) status code indicates that the target resource resides temporarily under a different URI and the user agent MUST NOT change the request method if it performs an automatic redirection to that URI. Since the redirection can change over time, the client ought to continue using the original effective request URI for future requests.
-http-status-308:
-  category: HTTP Status Redirection
-  name: 308 Permanent Redirect
-  description: |
-    The 308 (Permanent Redirect) status code indicates that the target resource has been assigned a new permanent URI and any future references to this resource ought to use one of the enclosed URIs. 
 http-status-400:
   category: HTTP Status User Error
   name: 400 Bad Request
